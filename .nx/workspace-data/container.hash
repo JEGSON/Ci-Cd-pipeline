@@ -1,0 +1,233 @@
+{
+  "16596619699915213609": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/cart:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/cart"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "18215546470113321886": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/catalog:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/catalog"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "17063394046350885746": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/checkout:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/checkout"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "10557013452081979943": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/load-generator:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/load-generator"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "9574267582502928532": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/orders:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/orders"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "5539702950235389629": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/ui:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/ui"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "1410135805091014193": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/checkout:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/checkout"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

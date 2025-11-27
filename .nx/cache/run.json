@@ -1,0 +1,65 @@
+{
+  "run": {
+    "command": "nx run-many -t container --projects=ui,catalog,cart,orders,checkout --configuration publish",
+    "startTime": "2025-11-27T20:44:37.965Z",
+    "endTime": "2025-11-27T21:08:54.452Z",
+    "inner": false
+  },
+  "tasks": [
+    {
+      "taskId": "cart:container:publish",
+      "target": "container",
+      "projectName": "cart",
+      "hash": "7987772422707577134",
+      "startTime": "2025-11-27T20:44:37.998Z",
+      "endTime": "2025-11-27T20:56:16.881Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "orders:container:publish",
+      "target": "container",
+      "projectName": "orders",
+      "hash": "12894103782538315000",
+      "startTime": "2025-11-27T20:44:37.998Z",
+      "endTime": "2025-11-27T21:01:30.075Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "ui:container:publish",
+      "target": "container",
+      "projectName": "ui",
+      "hash": "298242403737239846",
+      "startTime": "2025-11-27T20:44:37.998Z",
+      "endTime": "2025-11-27T21:03:28.987Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "catalog:container:publish",
+      "target": "container",
+      "projectName": "catalog",
+      "hash": "15108235973971551999",
+      "startTime": "2025-11-27T20:56:16.899Z",
+      "endTime": "2025-11-27T21:04:15.101Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    },
+    {
+      "taskId": "checkout:container:publish",
+      "target": "container",
+      "projectName": "checkout",
+      "hash": "6664650182097955507",
+      "startTime": "2025-11-27T21:01:30.079Z",
+      "endTime": "2025-11-27T21:08:54.448Z",
+      "params": "",
+      "cacheStatus": "cache-miss",
+      "status": 0
+    }
+  ]
+}

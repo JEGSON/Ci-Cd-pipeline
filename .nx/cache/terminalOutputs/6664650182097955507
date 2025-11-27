@@ -1,0 +1,334 @@
+
+[36m>[39m [7m[1m[36m Docker info [39m[22m[27m
+
+[command]/usr/local/bin/docker version
+Client:
+ Version:           29.0.1
+ API version:       1.52
+ Go version:        go1.25.4
+ Git commit:        eedd969
+ Built:             Fri Nov 14 16:16:57 2025
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.52.0 (210994)
+ Engine:
+  Version:          29.0.1
+  API version:      1.52 (minimum version 1.44)
+  Go version:       go1.25.4
+  Git commit:       198b5e3
+  Built:            Fri Nov 14 16:18:20 2025
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          v2.1.5
+  GitCommit:        fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc:
+  Version:          1.3.3
+  GitCommit:        v1.3.3-0-gd842d771
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[command]/usr/local/bin/docker info
+Client:
+ Version:    29.0.1
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v1.9.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-ai
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.29.1-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.40.3-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-compose
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.45
+    Path:     /Users/wealth/.docker/cli-plugins/docker-debug
+  desktop: Docker Desktop commands (Docker Inc.)
+    Version:  v0.2.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-desktop
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.31
+    Path:     /Users/wealth/.docker/cli-plugins/docker-extension
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-init
+  mcp: Docker MCP Plugin (Docker Inc.)
+    Version:  v0.28.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-mcp
+  model: Docker Model Runner (Docker Inc.)
+    Version:  v1.0.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-model
+  offload: Docker Offload (Docker Inc.)
+    Version:  v0.5.20
+    Path:     /Users/wealth/.docker/cli-plugins/docker-offload
+  pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)
+    Version:  v0.0.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-pass
+  sandbox: Docker Sandbox (Docker Inc.)
+    Version:  v0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sandbox
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)
+    Version:  0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sbom
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.18.3
+    Path:     /Users/wealth/.docker/cli-plugins/docker-scout
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 27
+ Server Version: 29.0.1
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Discovered Devices:
+  cdi: docker.com/gpu=webgpu
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.12.54-linuxkit
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: aarch64
+ CPUs: 10
+ Total Memory: 7.653GiB
+ Name: docker-desktop
+ ID: 9749fbda-ff4d-4cbd-8ae1-270cf7536c9e
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=unix:///Users/wealth/Library/Containers/com.docker.docker/Data/docker-cli.sock
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Firewall Backend: iptables
+
+
+[36m>[39m [7m[1m[36m Buildx version [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx version
+github.com/docker/buildx v0.29.1-desktop.1 28f6246ff24e2c05095e8741e48c48dcb2d3b4bc
+
+[36m>[39m [7m[1m[36m Build [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx build --file /Users/wealth/AWS_DEVOPS/retail-store-sample-app/src/checkout/Dockerfile --iidfile /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-DbP3PG/iidfile --platform linux/amd64,linux/arm64 --tag 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest --load --metadata-file /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-DbP3PG/metadata-file --push src/checkout
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.01kB done
+#1 DONE 0.0s
+
+#2 [linux/arm64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#2 ...
+
+#3 [auth] library/node:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [linux/arm64 internal] load metadata for docker.io/library/node:20-alpine
+#4 ...
+
+#5 [linux/amd64 internal] load metadata for docker.io/library/node:20-alpine
+#5 DONE 1.9s
+
+#4 [linux/arm64 internal] load metadata for docker.io/library/node:20-alpine
+#4 DONE 1.9s
+
+#2 [linux/arm64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#2 DONE 2.0s
+
+#6 [internal] load .dockerignore
+#6 transferring context: 126B done
+#6 DONE 0.0s
+
+#7 [linux/amd64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#7 DONE 2.0s
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d done
+#8 DONE 0.0s
+
+#9 [linux/amd64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#9 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d done
+#9 DONE 0.0s
+
+#10 [linux/arm64 stage-1 3/7] RUN alternatives --install /usr/bin/node node /usr/bin/node-20 90
+#10 CACHED
+
+#11 [linux/arm64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#11 CACHED
+
+#12 [linux/arm64 stage-1 4/7] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#12 CACHED
+
+#13 [linux/arm64 stage-1 5/7] WORKDIR /app
+#13 CACHED
+
+#14 [linux/amd64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#14 CACHED
+
+#15 [linux/amd64 stage-1 3/7] RUN alternatives --install /usr/bin/node node /usr/bin/node-20 90
+#15 CACHED
+
+#16 [linux/amd64 stage-1 4/7] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#16 CACHED
+
+#17 [linux/amd64 stage-1 5/7] WORKDIR /app
+#17 CACHED
+
+#18 [linux/amd64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#18 resolve docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463 0.0s done
+#18 DONE 0.0s
+
+#19 [linux/arm64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#19 resolve docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463 done
+#19 DONE 0.0s
+
+#20 [internal] load build context
+#20 transferring context: 3.35kB done
+#20 DONE 0.0s
+
+#21 [linux/amd64 build 3/6] COPY --chown=node:node package*.json ./
+#21 CACHED
+
+#22 [linux/amd64 build 2/6] WORKDIR /usr/src/app
+#22 CACHED
+
+#23 [linux/amd64 build 5/6] RUN yarn install --frozen-lockfile
+#23 CACHED
+
+#24 [linux/amd64 build 4/6] COPY --chown=node:node . .
+#24 CACHED
+
+#25 [linux/amd64 build 6/6] RUN yarn build
+#25 CACHED
+
+#26 [linux/arm64 build 5/6] RUN yarn install --frozen-lockfile
+#26 CACHED
+
+#27 [linux/arm64 build 4/6] COPY --chown=node:node . .
+#27 CACHED
+
+#28 [linux/arm64 build 2/6] WORKDIR /usr/src/app
+#28 CACHED
+
+#29 [linux/arm64 build 3/6] COPY --chown=node:node package*.json ./
+#29 CACHED
+
+#30 [linux/arm64 build 6/6] RUN yarn build
+#30 CACHED
+
+#31 [linux/arm64 stage-1 6/7] COPY --chown=appuser:appuser --from=build /usr/src/app/node_modules ./node_modules
+#31 ...
+
+#32 [linux/amd64 stage-1 6/7] COPY --chown=appuser:appuser --from=build /usr/src/app/node_modules ./node_modules
+#32 DONE 15.4s
+
+#31 [linux/arm64 stage-1 6/7] COPY --chown=appuser:appuser --from=build /usr/src/app/node_modules ./node_modules
+#31 DONE 15.4s
+
+#33 [linux/arm64 stage-1 7/7] COPY --chown=appuser:appuser --from=build /usr/src/app/dist ./dist
+#33 ...
+
+#34 [linux/amd64 stage-1 7/7] COPY --chown=appuser:appuser --from=build /usr/src/app/dist ./dist
+#34 DONE 0.5s
+
+#33 [linux/arm64 stage-1 7/7] COPY --chown=appuser:appuser --from=build /usr/src/app/dist ./dist
+#33 DONE 0.5s
+
+#35 exporting to image
+#35 exporting layers
+#35 exporting manifest sha256:fadbefd070816bf5eb4b02064c48e383ed3b43998902bfc8abf48b0b46c781cf done
+#35 exporting config sha256:85e2f2101eda9a4477b377c34f04cbed0fac2d4229cb244eefe424136992a65c done
+#35 exporting attestation manifest sha256:da74339e55c590cb1ff3e4b3f049480e61fb5741410634825996a5ca6b07842d done
+#35 exporting manifest sha256:c509a80e95ec7be0e2bacff5feed320bbdade49a28de4e4b8200433ce218440f done
+#35 exporting config sha256:29a19914925eceecac095411e70f28e83f58c4e37ab0a2ed0f7baf19ee4f41d1 done
+#35 exporting attestation manifest sha256:45d08c72d6651861b854ffdec2eb4182c747d236733521cbbae8c20707645879 done
+#35 exporting manifest list sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99 done
+#35 naming to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest done
+#35 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest
+#35 ...
+
+#36 exporting to image
+#36 exporting layers 8.2s done
+#36 exporting manifest sha256:fadbefd070816bf5eb4b02064c48e383ed3b43998902bfc8abf48b0b46c781cf 0.0s done
+#36 exporting config sha256:85e2f2101eda9a4477b377c34f04cbed0fac2d4229cb244eefe424136992a65c done
+#36 exporting attestation manifest sha256:da74339e55c590cb1ff3e4b3f049480e61fb5741410634825996a5ca6b07842d done
+#36 exporting manifest sha256:c509a80e95ec7be0e2bacff5feed320bbdade49a28de4e4b8200433ce218440f done
+#36 exporting config sha256:29a19914925eceecac095411e70f28e83f58c4e37ab0a2ed0f7baf19ee4f41d1 done
+#36 exporting attestation manifest sha256:45d08c72d6651861b854ffdec2eb4182c747d236733521cbbae8c20707645879 0.0s done
+#36 exporting manifest list sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99 done
+#36 naming to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest done
+#36 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest 4.6s done
+#36 DONE 12.9s
+
+#35 exporting to image
+#35 pushing layers
+#35 ...
+
+#37 [auth] sharing credentials for 318112817098.dkr.ecr.us-east-1.amazonaws.com
+#37 DONE 0.0s
+
+#35 exporting to image
+#35 pushing layers 408.3s done
+#35 pushing manifest for 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest@sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99
+#35 pushing manifest for 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest@sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99 3.9s done
+#35 DONE 425.2s
+
+#38 resolving provenance for metadata file
+#38 DONE 0.0s
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/2bwtuvfitfpvmw3v1nwmvar56
+
+[36m>[39m [7m[1m[36m ImageID [39m[22m[27m
+
+sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99
+
+[36m>[39m [7m[1m[36m Digest [39m[22m[27m
+
+sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99
+
+[36m>[39m [7m[1m[36m Metadata [39m[22m[27m
+
+{
+  "buildx.build.ref": "desktop-linux/desktop-linux/2bwtuvfitfpvmw3v1nwmvar56",
+  "containerimage.descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99",
+    "size": 1609
+  },
+  "containerimage.digest": "sha256:0a0c7279f46ae4ecb5c1b28ec35d4587a55fd4b7b99fcb4f0fc0b1f96d0e7c99",
+  "image.name": "318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest"
+}
+
+[36m>[39m [7m[1m[36m Removing temp folder /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-DbP3PG [39m[22m[27m
+

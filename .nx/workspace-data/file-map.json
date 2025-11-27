@@ -1,0 +1,2880 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.8.2",
+  "pathMappings": {},
+  "nxJsonPlugins": [
+    {
+      "name": "@nx-tools/nx-container",
+      "version": "^6.2.0",
+      "options": {
+        "defaultEngine": "docker",
+        "registry": "public.ecr.aws"
+      }
+    },
+    {
+      "name": "@nx-go/nx-go",
+      "version": "^3.3.1"
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [],
+    "projectFileMap": {
+      "terraform-eks-minimal": [
+        {
+          "file": "terraform/eks/minimal/README.md",
+          "hash": "2378467185559340550"
+        },
+        {
+          "file": "terraform/eks/minimal/data.tf",
+          "hash": "9107301048834709559"
+        },
+        {
+          "file": "terraform/eks/minimal/main.tf",
+          "hash": "6982534805174470761"
+        },
+        {
+          "file": "terraform/eks/minimal/output.tf",
+          "hash": "12706457789605652625"
+        },
+        {
+          "file": "terraform/eks/minimal/project.json",
+          "hash": "7377334479151057682"
+        },
+        {
+          "file": "terraform/eks/minimal/variables.tf",
+          "hash": "14472241647371657258"
+        },
+        {
+          "file": "terraform/eks/minimal/versions.tf",
+          "hash": "11273155368297270393"
+        }
+      ],
+      "ui": [
+        {
+          "file": "src/ui/.dockerignore",
+          "hash": "17922673886393484375"
+        },
+        {
+          "file": "src/ui/.gitignore",
+          "hash": "6534679512303151434"
+        },
+        {
+          "file": "src/ui/.mvn/wrapper/maven-wrapper.properties",
+          "hash": "9046932976606372536"
+        },
+        {
+          "file": "src/ui/ATTRIBUTION.md",
+          "hash": "12884163045139886917"
+        },
+        {
+          "file": "src/ui/Dockerfile",
+          "hash": "2852693218112980661"
+        },
+        {
+          "file": "src/ui/README.md",
+          "hash": "12609390244929486968"
+        },
+        {
+          "file": "src/ui/chart/.helmignore",
+          "hash": "9835375496508434033"
+        },
+        {
+          "file": "src/ui/chart/Chart.yaml",
+          "hash": "6539013055113648154"
+        },
+        {
+          "file": "src/ui/chart/README.md",
+          "hash": "2809637991022209988"
+        },
+        {
+          "file": "src/ui/chart/templates/NOTES.txt",
+          "hash": "18167981253744768354"
+        },
+        {
+          "file": "src/ui/chart/templates/_helpers.tpl",
+          "hash": "11750472112935351559"
+        },
+        {
+          "file": "src/ui/chart/templates/configmap.yml",
+          "hash": "1132502109728605408"
+        },
+        {
+          "file": "src/ui/chart/templates/deployment.yaml",
+          "hash": "9746823100259067881"
+        },
+        {
+          "file": "src/ui/chart/templates/hpa.yaml",
+          "hash": "13975622445717807145"
+        },
+        {
+          "file": "src/ui/chart/templates/ingress.yaml",
+          "hash": "6548066011821157878"
+        },
+        {
+          "file": "src/ui/chart/templates/istio-gateway.yml",
+          "hash": "7266832480698527586"
+        },
+        {
+          "file": "src/ui/chart/templates/istio-virtualservice.yml",
+          "hash": "8921702631036239468"
+        },
+        {
+          "file": "src/ui/chart/templates/pdb.yaml",
+          "hash": "8416486526536688806"
+        },
+        {
+          "file": "src/ui/chart/templates/service.yaml",
+          "hash": "1037874415664908623"
+        },
+        {
+          "file": "src/ui/chart/templates/serviceaccount.yaml",
+          "hash": "13030968578633064953"
+        },
+        {
+          "file": "src/ui/chart/templates/tests/test-connection.yaml",
+          "hash": "7061231131788670018"
+        },
+        {
+          "file": "src/ui/chart/values.yaml",
+          "hash": "11527680759180421831"
+        },
+        {
+          "file": "src/ui/docker-compose.yml",
+          "hash": "7945292974258697911"
+        },
+        {
+          "file": "src/ui/mvnw",
+          "hash": "15069388377727069083"
+        },
+        {
+          "file": "src/ui/mvnw.cmd",
+          "hash": "1237986550895226753"
+        },
+        {
+          "file": "src/ui/pom.xml",
+          "hash": "16816333152378351068"
+        },
+        {
+          "file": "src/ui/project.json",
+          "hash": "2516422251807779048"
+        },
+        {
+          "file": "src/ui/scripts/oss.source",
+          "hash": "12197942382832093707"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/UiApplication.java",
+          "hash": "9840339767246378558"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/chat/MockChatModel.java",
+          "hash": "16362802367970926196"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/CartClient.java",
+          "hash": "13473629273486656229"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/carts/CartsRequestBuilder.java",
+          "hash": "9543336643952393389"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/carts/item/WithCustomerItemRequestBuilder.java",
+          "hash": "14830858728702284765"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/carts/item/items/ItemsRequestBuilder.java",
+          "hash": "15239261292848500159"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/carts/item/items/item/WithItemItemRequestBuilder.java",
+          "hash": "6008994917770408536"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/carts/item/merge/MergeRequestBuilder.java",
+          "hash": "10736377475215074244"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/kiota-lock.json",
+          "hash": "16297507785175944633"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/models/Cart.java",
+          "hash": "1297462360416487632"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/cart/models/Item.java",
+          "hash": "13947747598654933"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/CatalogClient.java",
+          "hash": "387759831693641502"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/catalog/CatalogRequestBuilder.java",
+          "hash": "10746979747181604819"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/catalog/products/ProductsRequestBuilder.java",
+          "hash": "6183051135798007904"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/catalog/products/item/ProductsItemRequestBuilder.java",
+          "hash": "6036137936923565144"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/catalog/size/SizeRequestBuilder.java",
+          "hash": "854818757618485175"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/catalog/tags/TagsRequestBuilder.java",
+          "hash": "11616475878871227477"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/kiota-lock.json",
+          "hash": "17711376231114281377"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/models/httputil/HTTPError.java",
+          "hash": "14416076065437042182"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/models/model/CatalogSizeResponse.java",
+          "hash": "15060525934368390099"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/models/model/Product.java",
+          "hash": "9382395215380037749"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/catalog/models/model/Tag.java",
+          "hash": "12371719556063794382"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/CheckoutClient.java",
+          "hash": "16418080033675561782"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/checkout/CheckoutRequestBuilder.java",
+          "hash": "5970250124884715050"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/checkout/item/WithCustomerItemRequestBuilder.java",
+          "hash": "15681425644494987416"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/checkout/item/submit/SubmitRequestBuilder.java",
+          "hash": "7011956148547761049"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/checkout/item/update/UpdateRequestBuilder.java",
+          "hash": "17033389191874861938"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/kiota-lock.json",
+          "hash": "386556178422691169"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/Checkout.java",
+          "hash": "9696910272635864811"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/CheckoutRequest.java",
+          "hash": "3783025411662995204"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/CheckoutSubmitted.java",
+          "hash": "15686923737323470622"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/Item.java",
+          "hash": "15982891928818142565"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/ItemRequest.java",
+          "hash": "14751985017824387187"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/ShippingAddress.java",
+          "hash": "14578351673147823465"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/ShippingOption.java",
+          "hash": "17086093364183247523"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/checkout/models/ShippingRates.java",
+          "hash": "11397025963570718026"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/orders/OrdersClient.java",
+          "hash": "12075856343515718589"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/orders/kiota-lock.json",
+          "hash": "9241878015947234086"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/orders/models/ExistingOrder.java",
+          "hash": "17150703524987050727"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/orders/models/Order.java",
+          "hash": "14954935926971486257"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/orders/models/OrderItem.java",
+          "hash": "10651717096271764261"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/orders/models/ShippingAddress.java",
+          "hash": "7570068921870607234"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/client/orders/orders/OrdersRequestBuilder.java",
+          "hash": "13540802169485038999"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/EndpointProperties.java",
+          "hash": "8618081981927480446"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/StoreServices.java",
+          "hash": "3710593523339451146"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/ThymeleafConfig.java",
+          "hash": "14185159190714352214"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/WebConfig.java",
+          "hash": "1527288011955694189"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/chat/BedrockChatConfig.java",
+          "hash": "5351816276002733559"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/chat/BedrockChatProperties.java",
+          "hash": "13049308823002349300"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/chat/ChatProperties.java",
+          "hash": "7968708881794863133"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/chat/MockChatConfig.java",
+          "hash": "8975509242092799792"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/chat/OpenAIChatConfig.java",
+          "hash": "14635988630080126466"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/config/chat/OpenAIChatProperties.java",
+          "hash": "15824659260896199114"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/assets/AssetsService.java",
+          "hash": "14783628682521451476"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/assets/MockAssetsService.java",
+          "hash": "2346517753644516772"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/assets/ProxyingAssetsService.java",
+          "hash": "355228477879184965"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/carts/CartsService.java",
+          "hash": "814608953599612473"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/carts/KiotaCartsService.java",
+          "hash": "10764364453577478968"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/carts/MockCartsService.java",
+          "hash": "15837967835563012268"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/carts/model/Cart.java",
+          "hash": "13701568184233608240"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/carts/model/CartItem.java",
+          "hash": "18400271186778320846"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/catalog/CatalogService.java",
+          "hash": "6981558252499218431"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/catalog/KiotaCatalogService.java",
+          "hash": "13092648338196803768"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/catalog/MockCatalogService.java",
+          "hash": "5115953175486571305"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/catalog/model/CatalogMapper.java",
+          "hash": "12509976812638799895"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/catalog/model/Product.java",
+          "hash": "11551366655861983395"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/catalog/model/ProductPage.java",
+          "hash": "10889331910880123016"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/catalog/model/ProductTag.java",
+          "hash": "499809828539349643"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/CheckoutService.java",
+          "hash": "6459330833808413440"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/KiotaCheckoutService.java",
+          "hash": "16069887854822822916"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/MockCheckoutService.java",
+          "hash": "4199273990812294391"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/Checkout.java",
+          "hash": "15922782853298357225"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/CheckoutItem.java",
+          "hash": "11739758127958646572"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/CheckoutItemRequest.java",
+          "hash": "17108738767712428790"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/CheckoutMapper.java",
+          "hash": "13415710636158437196"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/CheckoutSubmitted.java",
+          "hash": "12469984947503924219"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/CheckoutSubmittedResponse.java",
+          "hash": "2759586956381710313"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/ShippingAddress.java",
+          "hash": "7633743472527556735"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/checkout/model/ShippingOption.java",
+          "hash": "16104540166132076847"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/Metadata.java",
+          "hash": "10257275402164329331"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/MetadataAttribute.java",
+          "hash": "13139938746580742389"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/MetadataProvider.java",
+          "hash": "8876724434946296290"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/MetadataService.java",
+          "hash": "17886398703083673760"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/MetadataSet.java",
+          "hash": "17903971389069986268"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/MetadataSource.java",
+          "hash": "6885991275748990400"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/providers/Ec2MetadataProvider.java",
+          "hash": "18177805000640093991"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/providers/EcsMetadataProvider.java",
+          "hash": "16028923447642216939"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/providers/EksMetadataProvider.java",
+          "hash": "826867871461306812"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/providers/KubernetesMetadataProvider.java",
+          "hash": "11216100266660851469"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/providers/LambdaMetadataProvider.java",
+          "hash": "17816793303342761838"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/services/metadata/providers/ResourceMetadataProvider.java",
+          "hash": "3839928524675198829"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/util/RetryUtils.java",
+          "hash": "17256779925780875462"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/util/ToggleHealthIndicator.java",
+          "hash": "14082626348658749342"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/CartController.java",
+          "hash": "4258006378527061559"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/CatalogController.java",
+          "hash": "643002842943994212"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/ChatController.java",
+          "hash": "17985217365556317978"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/CheckoutController.java",
+          "hash": "2135090314252249388"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/HomeController.java",
+          "hash": "12656155013656640983"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/MetadataController.java",
+          "hash": "8803848110795580770"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/ProxyController.java",
+          "hash": "11492227286943139048"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/TopologyController.java",
+          "hash": "11124181657069180073"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/UtilityController.java",
+          "hash": "16103723229009271442"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/dialect/DynamicColSpanProcessor.java",
+          "hash": "17833067863649424695"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/dialect/TopologyInformationStatusProcessor.java",
+          "hash": "1997177933121492088"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/payload/Cart.java",
+          "hash": "2348431304417982182"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/payload/CartChangeRequest.java",
+          "hash": "17299908862462642870"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/payload/CartItem.java",
+          "hash": "18173230860709458795"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/payload/CheckoutDeliveryMethodRequest.java",
+          "hash": "15716501589501622071"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/payload/PaymentDetailsRequest.java",
+          "hash": "10774923433151425423"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/payload/ShippingAddressRequest.java",
+          "hash": "11584367311476604680"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/CommonAttributesControllerAdvice.java",
+          "hash": "3903425830022602369"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/PageInfo.java",
+          "hash": "4146391304492092449"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/RequiresCommonAttributes.java",
+          "hash": "168064461266674488"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/SessionIDUtil.java",
+          "hash": "10542200566155323175"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/SessionIDWebFilter.java",
+          "hash": "11592206399860306724"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/ThemeAttributeControllerAdvice.java",
+          "hash": "3816815065139875053"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/TopologyInformation.java",
+          "hash": "15613988508413809393"
+        },
+        {
+          "file": "src/ui/src/main/java/com/amazon/sample/ui/web/util/TopologyStatus.java",
+          "hash": "5594213975733295964"
+        },
+        {
+          "file": "src/ui/src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+          "hash": "2653713892872737408"
+        },
+        {
+          "file": "src/ui/src/main/resources/application-prod.yml",
+          "hash": "6518564120445313546"
+        },
+        {
+          "file": "src/ui/src/main/resources/application.yml",
+          "hash": "473524985049348964"
+        },
+        {
+          "file": "src/ui/src/main/resources/data/products.json",
+          "hash": "3515971256987505025"
+        },
+        {
+          "file": "src/ui/src/main/resources/data/tags.json",
+          "hash": "7155814416677129534"
+        },
+        {
+          "file": "src/ui/src/main/resources/lang/messages.properties",
+          "hash": "9582948099073215734"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/.DS_Store",
+          "hash": "387026519119833248"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/css/styles.css",
+          "hash": "5579185067246741787"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/css/theme-default.css",
+          "hash": "13092022141976889955"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/css/theme-green.css",
+          "hash": "3801604404457775184"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/css/theme-orange.css",
+          "hash": "9542316067604948051"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/css/theme-teal.css",
+          "hash": "10518444565305475972"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/.DS_Store",
+          "hash": "2816826275581419587"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/chat-avatar-mini.jpg",
+          "hash": "13670176513671094147"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/chat-avatar.jpg",
+          "hash": "11068784120398257005"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/hero.jpg",
+          "hash": "5296138977118823448"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/order.jpg",
+          "hash": "16211157943126825156"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/.DS_Store",
+          "hash": "14084404632488199927"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/1ca35e86-4b4c-4124-b6b5-076ba4134d0d.jpg",
+          "hash": "9856773524726672616"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/4f18544b-70a5-4352-8e19-0d070f46745d.jpg",
+          "hash": "3689861412944019297"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/631a3db5-ac07-492c-a994-8cd56923c112.jpg",
+          "hash": "8846998818231121742"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/79bce3f3-935f-4912-8c62-0d2f3e059405.jpg",
+          "hash": "4158387595264068591"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/8757729a-c518-4356-8694-9e795a9b3237.jpg",
+          "hash": "17889740050209971775"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/87e89b11-d319-446d-b9be-50adcca5224a.jpg",
+          "hash": "17541315506345403889"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/a1258cd2-176c-4507-ade6-746dab5ad625.jpg",
+          "hash": "10484584009695656735"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/cc789f85-1476-452a-8100-9e74502198e0.jpg",
+          "hash": "7035543522463478089"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/d27cf49f-b689-4a75-a249-d373e0330bb5.jpg",
+          "hash": "9521083699201217696"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/d3104128-1d14-4465-99d3-8ab9267c687b.jpg",
+          "hash": "1949302099279781770"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/d4edfedb-dbe9-4dd9-aae8-009489394955.jpg",
+          "hash": "1723435420659606069"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/img/products/d77f9ae6-e9a8-4a3e-86bd-b72af75cbc49.jpg",
+          "hash": "7451675970291219607"
+        },
+        {
+          "file": "src/ui/src/main/resources/static/assets/js/chat.js",
+          "hash": "14455048887294140740"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/cart.html",
+          "hash": "14555403653555145842"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/catalog.html",
+          "hash": "15441474581320245356"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/checkout-confirm.html",
+          "hash": "17910006589676780426"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/checkout-delivery.html",
+          "hash": "11796423361847640964"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/checkout-payment.html",
+          "hash": "8659112198547468454"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/checkout-shipping.html",
+          "hash": "2552594765337910566"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/detail.html",
+          "hash": "9307339551716956508"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/error/404.html",
+          "hash": "15258172537980816899"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/error/500.html",
+          "hash": "9562026611958733436"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/fragments/bare.html",
+          "hash": "457778219618729904"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/fragments/checkout.html",
+          "hash": "2784225288402412666"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/fragments/error.html",
+          "hash": "8194992131646963179"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/fragments/layout.html",
+          "hash": "15892434853576122078"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/fragments/product_card.html",
+          "hash": "9053920714219828360"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/fragments/root.html",
+          "hash": "3045520626158620611"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/fragments/stars.html",
+          "hash": "15653020833348402660"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/home.html",
+          "hash": "13194779614277397333"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/metadata.html",
+          "hash": "17655077208696744267"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/order.html",
+          "hash": "1495220168770027152"
+        },
+        {
+          "file": "src/ui/src/main/resources/templates/topology.html",
+          "hash": "17426981711875038082"
+        },
+        {
+          "file": "src/ui/src/test/java/com/amazon/sample/ui/UiApplicationTests.java",
+          "hash": "830820387946370257"
+        }
+      ],
+      "terraform-apprunner-default": [
+        {
+          "file": "terraform/apprunner/default/README.md",
+          "hash": "7223924794322653536"
+        },
+        {
+          "file": "terraform/apprunner/default/main.tf",
+          "hash": "7367947266082532068"
+        },
+        {
+          "file": "terraform/apprunner/default/output.tf",
+          "hash": "10696257243890582278"
+        },
+        {
+          "file": "terraform/apprunner/default/project.json",
+          "hash": "5123203023106676566"
+        },
+        {
+          "file": "terraform/apprunner/default/variables.tf",
+          "hash": "1162617160134627480"
+        },
+        {
+          "file": "terraform/apprunner/default/versions.tf",
+          "hash": "3487005561764489663"
+        }
+      ],
+      "e2e": [
+        {
+          "file": "src/e2e/.gitignore",
+          "hash": "2303642404724327591"
+        },
+        {
+          "file": "src/e2e/Dockerfile.run",
+          "hash": "11059076120993151056"
+        },
+        {
+          "file": "src/e2e/README.md",
+          "hash": "6168827268307627116"
+        },
+        {
+          "file": "src/e2e/cypress.config.js",
+          "hash": "3462224625200104372"
+        },
+        {
+          "file": "src/e2e/cypress/e2e/cart.cy.js",
+          "hash": "4917709843015546178"
+        },
+        {
+          "file": "src/e2e/cypress/e2e/catalog.cy.js",
+          "hash": "431015866423218458"
+        },
+        {
+          "file": "src/e2e/cypress/e2e/checkout.cy.js",
+          "hash": "6783920986957787988"
+        },
+        {
+          "file": "src/e2e/cypress/e2e/home.cy.js",
+          "hash": "17511182165624704891"
+        },
+        {
+          "file": "src/e2e/cypress/fixtures/example.json",
+          "hash": "11785586596216172004"
+        },
+        {
+          "file": "src/e2e/cypress/pages/Cart.js",
+          "hash": "16896026688626783"
+        },
+        {
+          "file": "src/e2e/cypress/pages/Catalog.js",
+          "hash": "2191008087534539201"
+        },
+        {
+          "file": "src/e2e/cypress/pages/Checkout.js",
+          "hash": "1213471561790685"
+        },
+        {
+          "file": "src/e2e/cypress/pages/CheckoutAddress.js",
+          "hash": "15193681107076712237"
+        },
+        {
+          "file": "src/e2e/cypress/pages/CheckoutOrder.js",
+          "hash": "10225681572362520571"
+        },
+        {
+          "file": "src/e2e/cypress/pages/CheckoutPayment.js",
+          "hash": "11778040648760007434"
+        },
+        {
+          "file": "src/e2e/cypress/pages/CheckoutShipping.js",
+          "hash": "276655946163336521"
+        },
+        {
+          "file": "src/e2e/cypress/pages/Home.js",
+          "hash": "6825234282059270982"
+        },
+        {
+          "file": "src/e2e/cypress/pages/Page.js",
+          "hash": "17635400081571944703"
+        },
+        {
+          "file": "src/e2e/cypress/pages/Product.js",
+          "hash": "9631058915904122036"
+        },
+        {
+          "file": "src/e2e/cypress/support/commands.js",
+          "hash": "1411137170112630782"
+        },
+        {
+          "file": "src/e2e/cypress/support/e2e.js",
+          "hash": "7077992620208743372"
+        },
+        {
+          "file": "src/e2e/package.json",
+          "hash": "2355695218835092758"
+        },
+        {
+          "file": "src/e2e/project.json",
+          "hash": "985929649300636086"
+        },
+        {
+          "file": "src/e2e/scripts/run-docker.sh",
+          "hash": "5355708257098523034"
+        },
+        {
+          "file": "src/e2e/yarn.lock",
+          "hash": "5348185055816308390"
+        }
+      ],
+      "app": [
+        {
+          "file": "src/app/.gitignore",
+          "hash": "13489826074370715262"
+        },
+        {
+          "file": "src/app/Tiltfile",
+          "hash": "11935809351160164531"
+        },
+        {
+          "file": "src/app/chart/.helmignore",
+          "hash": "2882549355274642284"
+        },
+        {
+          "file": "src/app/chart/Chart.yaml",
+          "hash": "16873327535730770827"
+        },
+        {
+          "file": "src/app/chart/values-stateful.yaml",
+          "hash": "4010406441706605028"
+        },
+        {
+          "file": "src/app/chart/values.yaml",
+          "hash": "12870631909223429031"
+        },
+        {
+          "file": "src/app/compose.override.yaml",
+          "hash": "14355196890958157709"
+        },
+        {
+          "file": "src/app/docker-compose.yml",
+          "hash": "7923830646032291188"
+        },
+        {
+          "file": "src/app/helmfile.slim.yaml",
+          "hash": "4500332773700307870"
+        },
+        {
+          "file": "src/app/helmfile.yaml",
+          "hash": "10922357494775963568"
+        },
+        {
+          "file": "src/app/project.json",
+          "hash": "1771293360430185441"
+        },
+        {
+          "file": "src/app/scripts/generate_password.sh",
+          "hash": "2472355123905642940"
+        },
+        {
+          "file": "src/app/templates/carts.yaml.gotmpl",
+          "hash": "1786731789029141527"
+        },
+        {
+          "file": "src/app/templates/catalog.yaml.gotmpl",
+          "hash": "14906965616287435973"
+        },
+        {
+          "file": "src/app/templates/checkout.yaml.gotmpl",
+          "hash": "6830322282962820325"
+        },
+        {
+          "file": "src/app/templates/components.yaml.gotmpl",
+          "hash": "15533325387577877900"
+        },
+        {
+          "file": "src/app/templates/ingress.yaml.gotmpl",
+          "hash": "3401126842282780219"
+        },
+        {
+          "file": "src/app/templates/orders.yaml.gotmpl",
+          "hash": "2418501468581745471"
+        },
+        {
+          "file": "src/app/templates/ui.yaml.gotmpl",
+          "hash": "8759211757151219204"
+        }
+      ],
+      "store": [
+        {
+          "file": ".devcontainer.json",
+          "hash": "9347770325295647414"
+        },
+        {
+          "file": ".envrc",
+          "hash": "8904135562233764466"
+        },
+        {
+          "file": ".github/actions/setup-docker/action.yml",
+          "hash": "3098222914672381326"
+        },
+        {
+          "file": ".github/actions/setup-env/action.yml",
+          "hash": "12883485038357448995"
+        },
+        {
+          "file": ".github/workflows/artifacts.yaml",
+          "hash": "16458098829721183985"
+        },
+        {
+          "file": ".github/workflows/e2e-test.yml",
+          "hash": "999140127549443536"
+        },
+        {
+          "file": ".github/workflows/oss.yml",
+          "hash": "5509316530017882126"
+        },
+        {
+          "file": ".github/workflows/pr.yaml",
+          "hash": "17083090463682528171"
+        },
+        {
+          "file": ".github/workflows/publish-build.yml",
+          "hash": "14503653778077191260"
+        },
+        {
+          "file": ".github/workflows/release-please.yml",
+          "hash": "3006072467539992837"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "9406605367896352261"
+        },
+        {
+          "file": ".mergify.yml",
+          "hash": "2693528257624550997"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "14455476802406724042"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "12945283566427606879"
+        },
+        {
+          "file": ".release-please-manifest.json",
+          "hash": "11272327995986609870"
+        },
+        {
+          "file": ".yarnrc.yml",
+          "hash": "9773565372686775399"
+        },
+        {
+          "file": "CHANGELOG.md",
+          "hash": "7045111607017601351"
+        },
+        {
+          "file": "CODE_OF_CONDUCT.md",
+          "hash": "10609730181088042366"
+        },
+        {
+          "file": "CONTRIBUTING.md",
+          "hash": "2108682173888181917"
+        },
+        {
+          "file": "DEVELOPER_GUIDE.md",
+          "hash": "13814873954585212229"
+        },
+        {
+          "file": "LICENSE",
+          "hash": "15523103339060455187"
+        },
+        {
+          "file": "README.md",
+          "hash": "908063034230236459"
+        },
+        {
+          "file": "build-and-push-images.sh",
+          "hash": "16676522774516989998"
+        },
+        {
+          "file": "devenv.lock",
+          "hash": "10274200234986696316"
+        },
+        {
+          "file": "devenv.nix",
+          "hash": "3474454106058591047"
+        },
+        {
+          "file": "devenv.yaml",
+          "hash": "6486481510133576372"
+        },
+        {
+          "file": "docker-compose.yaml",
+          "hash": "13077424507376514184"
+        },
+        {
+          "file": "docs/diagrams.drawio.xml",
+          "hash": "5028880879681801509"
+        },
+        {
+          "file": "docs/features.md",
+          "hash": "12326515897560186351"
+        },
+        {
+          "file": "docs/images/architecture.png",
+          "hash": "15779620962150318100"
+        },
+        {
+          "file": "docs/images/banner.png",
+          "hash": "864534035912049530"
+        },
+        {
+          "file": "docs/images/chat-bot-button.png",
+          "hash": "16954001325350282058"
+        },
+        {
+          "file": "docs/images/chat-bot.png",
+          "hash": "17451470386638818864"
+        },
+        {
+          "file": "docs/images/containers.png",
+          "hash": "7803579058033888101"
+        },
+        {
+          "file": "docs/images/metadata-attr-id.png",
+          "hash": "13408898580229820243"
+        },
+        {
+          "file": "docs/images/metadata-attr.png",
+          "hash": "7903253488328046078"
+        },
+        {
+          "file": "docs/images/metadata.png",
+          "hash": "6467484828363528332"
+        },
+        {
+          "file": "docs/images/screenshot.png",
+          "hash": "7344420555501825949"
+        },
+        {
+          "file": "docs/images/theme-default.png",
+          "hash": "4591666876743620456"
+        },
+        {
+          "file": "docs/images/theme-orange.png",
+          "hash": "12810258876675579529"
+        },
+        {
+          "file": "docs/images/topology.png",
+          "hash": "6218042130557739048"
+        },
+        {
+          "file": "my-cicd-infrastructure/ecs-tasks/catalog-task-definition.json",
+          "hash": "2970173714100012494"
+        },
+        {
+          "file": "my-cicd-infrastructure/ecs-tasks/deploy-services.sh",
+          "hash": "1027404799843641794"
+        },
+        {
+          "file": "my-cicd-infrastructure/ecs-tasks/ui-task-definition.json",
+          "hash": "6321976860487496701"
+        },
+        {
+          "file": "my-cicd-infrastructure/terraform/infrastructure-outputs.txt",
+          "hash": "9134689047956615309"
+        },
+        {
+          "file": "my-cicd-infrastructure/terraform/main.tf",
+          "hash": "3210518739321363662"
+        },
+        {
+          "file": "my-cicd-infrastructure/terraform/outputs.tf",
+          "hash": "9767418801349708332"
+        },
+        {
+          "file": "my-cicd-infrastructure/terraform/variables.tf",
+          "hash": "1408768783027455304"
+        },
+        {
+          "file": "nx.json",
+          "hash": "6552198551755461683"
+        },
+        {
+          "file": "oss/ort/curations.yml",
+          "hash": "11152300289663103122"
+        },
+        {
+          "file": "oss/ort/go-mod.ort.yml",
+          "hash": "9139134701374496435"
+        },
+        {
+          "file": "oss/ort/maven.ort.yml",
+          "hash": "10585180186807564658"
+        },
+        {
+          "file": "oss/ort/npm.ort.yml",
+          "hash": "1157663975983246165"
+        },
+        {
+          "file": "oss/run.sh",
+          "hash": "8164942916654446836"
+        },
+        {
+          "file": "package.json",
+          "hash": "7240976787285855767",
+          "deps": [
+            "npm:@nx-extensions/helm",
+            "npm:@nx-go/nx-go",
+            "npm:@nx-tools/nx-container",
+            "npm:@nx/devkit",
+            "npm:@nx/js",
+            "npm:@prettier/plugin-xml",
+            "npm:@swc/helpers",
+            "npm:dotenv",
+            "npm:nx",
+            "npm:prettier",
+            "npm:prettier-plugin-java",
+            "npm:tslib",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "release-please-config.json",
+          "hash": "13059298292977382829"
+        },
+        {
+          "file": "renovate.json",
+          "hash": "6011670701821362552"
+        },
+        {
+          "file": "samples/data/products.json",
+          "hash": "3515971256987505025"
+        },
+        {
+          "file": "samples/data/tags.json",
+          "hash": "7155814416677129534"
+        },
+        {
+          "file": "samples/images/1ca35e86-4b4c-4124-b6b5-076ba4134d0d.jpg",
+          "hash": "9856773524726672616"
+        },
+        {
+          "file": "samples/images/4f18544b-70a5-4352-8e19-0d070f46745d.jpg",
+          "hash": "3689861412944019297"
+        },
+        {
+          "file": "samples/images/631a3db5-ac07-492c-a994-8cd56923c112.jpg",
+          "hash": "8846998818231121742"
+        },
+        {
+          "file": "samples/images/79bce3f3-935f-4912-8c62-0d2f3e059405.jpg",
+          "hash": "4158387595264068591"
+        },
+        {
+          "file": "samples/images/8757729a-c518-4356-8694-9e795a9b3237.jpg",
+          "hash": "17889740050209971775"
+        },
+        {
+          "file": "samples/images/87e89b11-d319-446d-b9be-50adcca5224a.jpg",
+          "hash": "17541315506345403889"
+        },
+        {
+          "file": "samples/images/a1258cd2-176c-4507-ade6-746dab5ad625.jpg",
+          "hash": "10484584009695656735"
+        },
+        {
+          "file": "samples/images/cc789f85-1476-452a-8100-9e74502198e0.jpg",
+          "hash": "7035543522463478089"
+        },
+        {
+          "file": "samples/images/d27cf49f-b689-4a75-a249-d373e0330bb5.jpg",
+          "hash": "9521083699201217696"
+        },
+        {
+          "file": "samples/images/d3104128-1d14-4465-99d3-8ab9267c687b.jpg",
+          "hash": "1949302099279781770"
+        },
+        {
+          "file": "samples/images/d4edfedb-dbe9-4dd9-aae8-009489394955.jpg",
+          "hash": "1723435420659606069"
+        },
+        {
+          "file": "samples/images/d77f9ae6-e9a8-4a3e-86bd-b72af75cbc49.jpg",
+          "hash": "7451675970291219607"
+        },
+        {
+          "file": "scripts/add-licenses.sh",
+          "hash": "5049092367883306110"
+        },
+        {
+          "file": "scripts/compose-dist.sh",
+          "hash": "17173366922884626934"
+        },
+        {
+          "file": "scripts/create-manifest.sh",
+          "hash": "16797634348212561458"
+        },
+        {
+          "file": "scripts/e2e-compose.sh",
+          "hash": "18302221592905369897"
+        },
+        {
+          "file": "scripts/e2e-kind.sh",
+          "hash": "13926184290446288592"
+        },
+        {
+          "file": "scripts/e2e.sh",
+          "hash": "15883134467146791593"
+        },
+        {
+          "file": "scripts/generate-codescan-report.sh",
+          "hash": "832413977792227535"
+        },
+        {
+          "file": "scripts/generate-security-report.sh",
+          "hash": "10875011426370880317"
+        },
+        {
+          "file": "scripts/kubernetes-dist.sh",
+          "hash": "5668385112502952641"
+        },
+        {
+          "file": "scripts/misc/license-header.txt",
+          "hash": "9617408380833460955"
+        },
+        {
+          "file": "src/misc/style/java/checkstyle.xml",
+          "hash": "13076080650228990334"
+        },
+        {
+          "file": "terraform/lib/apprunner/carts.tf",
+          "hash": "7377332914102401182"
+        },
+        {
+          "file": "terraform/lib/apprunner/catalog.tf",
+          "hash": "7671953180858637395"
+        },
+        {
+          "file": "terraform/lib/apprunner/checkout.tf",
+          "hash": "928973639777644282"
+        },
+        {
+          "file": "terraform/lib/apprunner/common.tf",
+          "hash": "5914042614736168246"
+        },
+        {
+          "file": "terraform/lib/apprunner/main.tf",
+          "hash": "18393733635455782845"
+        },
+        {
+          "file": "terraform/lib/apprunner/orders.tf",
+          "hash": "5682404262105367365"
+        },
+        {
+          "file": "terraform/lib/apprunner/outputs.tf",
+          "hash": "9619159581487228498"
+        },
+        {
+          "file": "terraform/lib/apprunner/ui.tf",
+          "hash": "3250433768716085922"
+        },
+        {
+          "file": "terraform/lib/apprunner/variables.tf",
+          "hash": "11035701305455948982"
+        },
+        {
+          "file": "terraform/lib/apprunner/versions.tf",
+          "hash": "15769322197851646287"
+        },
+        {
+          "file": "terraform/lib/apprunner/vpc.tf",
+          "hash": "11235858454004246411"
+        },
+        {
+          "file": "terraform/lib/dependencies/catalog_rds.tf",
+          "hash": "2650726988482225063"
+        },
+        {
+          "file": "terraform/lib/dependencies/dynamodb.tf",
+          "hash": "6477174619730401986"
+        },
+        {
+          "file": "terraform/lib/dependencies/elasticache.tf",
+          "hash": "12022613842365840611"
+        },
+        {
+          "file": "terraform/lib/dependencies/main.tf",
+          "hash": "5470348173042224563"
+        },
+        {
+          "file": "terraform/lib/dependencies/mq.tf",
+          "hash": "15824626991576410308"
+        },
+        {
+          "file": "terraform/lib/dependencies/orders_rds.tf",
+          "hash": "5772621422444561175"
+        },
+        {
+          "file": "terraform/lib/dependencies/outputs.tf",
+          "hash": "16358215612248525894"
+        },
+        {
+          "file": "terraform/lib/dependencies/variables.tf",
+          "hash": "7070736368264220928"
+        },
+        {
+          "file": "terraform/lib/dependencies/versions.tf",
+          "hash": "15769322197851646287"
+        },
+        {
+          "file": "terraform/lib/ecs/alb.tf",
+          "hash": "5176116245061174140"
+        },
+        {
+          "file": "terraform/lib/ecs/carts.tf",
+          "hash": "16696807007337546417"
+        },
+        {
+          "file": "terraform/lib/ecs/catalog.tf",
+          "hash": "16722344662730320147"
+        },
+        {
+          "file": "terraform/lib/ecs/checkout.tf",
+          "hash": "1024584535246591299"
+        },
+        {
+          "file": "terraform/lib/ecs/cluster.tf",
+          "hash": "9873381521302100078"
+        },
+        {
+          "file": "terraform/lib/ecs/common.tf",
+          "hash": "7661372936812263517"
+        },
+        {
+          "file": "terraform/lib/ecs/eventbridge.tf",
+          "hash": "83852843928669882"
+        },
+        {
+          "file": "terraform/lib/ecs/main.tf",
+          "hash": "8582352530326289582"
+        },
+        {
+          "file": "terraform/lib/ecs/orders.tf",
+          "hash": "13520381035745388926"
+        },
+        {
+          "file": "terraform/lib/ecs/outputs.tf",
+          "hash": "8713569121771331864"
+        },
+        {
+          "file": "terraform/lib/ecs/service/ecs.tf",
+          "hash": "15237660159563160457"
+        },
+        {
+          "file": "terraform/lib/ecs/service/iam.tf",
+          "hash": "10493559311285557025"
+        },
+        {
+          "file": "terraform/lib/ecs/service/outputs.tf",
+          "hash": "10023666479564675273"
+        },
+        {
+          "file": "terraform/lib/ecs/service/sg.tf",
+          "hash": "1979313040093557467"
+        },
+        {
+          "file": "terraform/lib/ecs/service/variables.tf",
+          "hash": "2252627186038116199"
+        },
+        {
+          "file": "terraform/lib/ecs/ui.tf",
+          "hash": "13726565134249257627"
+        },
+        {
+          "file": "terraform/lib/ecs/variables.tf",
+          "hash": "13238890019852601452"
+        },
+        {
+          "file": "terraform/lib/ecs/versions.tf",
+          "hash": "15769322197851646287"
+        },
+        {
+          "file": "terraform/lib/ecs/vpc.tf",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "terraform/lib/eks/adot.tf",
+          "hash": "3392771308697388035"
+        },
+        {
+          "file": "terraform/lib/eks/data.tf",
+          "hash": "7511299635632800264"
+        },
+        {
+          "file": "terraform/lib/eks/eks.tf",
+          "hash": "6560926458095241926"
+        },
+        {
+          "file": "terraform/lib/eks/istio.tf",
+          "hash": "1636365606540448175"
+        },
+        {
+          "file": "terraform/lib/eks/outputs.tf",
+          "hash": "16718403477311154991"
+        },
+        {
+          "file": "terraform/lib/eks/variables.tf",
+          "hash": "5556271526856634552"
+        },
+        {
+          "file": "terraform/lib/eks/versions.tf",
+          "hash": "15391622354984375099"
+        },
+        {
+          "file": "terraform/lib/images/README.md",
+          "hash": "3020563887172377172"
+        },
+        {
+          "file": "terraform/lib/images/generated.tf.json",
+          "hash": "3456674562541594477"
+        },
+        {
+          "file": "terraform/lib/images/main.tf",
+          "hash": "13871398767782317187"
+        },
+        {
+          "file": "terraform/lib/images/outputs.tf",
+          "hash": "10596703670700537397"
+        },
+        {
+          "file": "terraform/lib/images/variables.tf",
+          "hash": "15675774181406612725"
+        },
+        {
+          "file": "terraform/lib/tags/main.tf",
+          "hash": "11595659687811136930"
+        },
+        {
+          "file": "terraform/lib/vpc/outputs.tf",
+          "hash": "13691773961642359354"
+        },
+        {
+          "file": "terraform/lib/vpc/variables.tf",
+          "hash": "14438120630506493468"
+        },
+        {
+          "file": "terraform/lib/vpc/vpc.tf",
+          "hash": "948791748001617125"
+        },
+        {
+          "file": "yarn.lock",
+          "hash": "12636791742741137906"
+        }
+      ],
+      "checkout": [
+        {
+          "file": "src/checkout/.dockerignore",
+          "hash": "18335945183267878211"
+        },
+        {
+          "file": "src/checkout/.env",
+          "hash": "13613415494941657658"
+        },
+        {
+          "file": "src/checkout/.gitignore",
+          "hash": "672911037926083482"
+        },
+        {
+          "file": "src/checkout/.prettierrc",
+          "hash": "9555875142989992828"
+        },
+        {
+          "file": "src/checkout/ATTRIBUTION.md",
+          "hash": "16537856603297752462"
+        },
+        {
+          "file": "src/checkout/Dockerfile",
+          "hash": "9496700977652106927"
+        },
+        {
+          "file": "src/checkout/README.md",
+          "hash": "17885935370018325803"
+        },
+        {
+          "file": "src/checkout/chart/.helmignore",
+          "hash": "9835375496508434033"
+        },
+        {
+          "file": "src/checkout/chart/Chart.yaml",
+          "hash": "575723762047612198"
+        },
+        {
+          "file": "src/checkout/chart/templates/NOTES.txt",
+          "hash": "5259369317576729845"
+        },
+        {
+          "file": "src/checkout/chart/templates/_helpers.tpl",
+          "hash": "5579684322391658557"
+        },
+        {
+          "file": "src/checkout/chart/templates/configmap.yaml",
+          "hash": "625231883205895391"
+        },
+        {
+          "file": "src/checkout/chart/templates/deployment.yaml",
+          "hash": "15395312354530097516"
+        },
+        {
+          "file": "src/checkout/chart/templates/hpa.yaml",
+          "hash": "2530134119603093585"
+        },
+        {
+          "file": "src/checkout/chart/templates/pdb.yaml",
+          "hash": "2653177351704591805"
+        },
+        {
+          "file": "src/checkout/chart/templates/redis-deployment.yaml",
+          "hash": "17541385342347535050"
+        },
+        {
+          "file": "src/checkout/chart/templates/redis-service.yaml",
+          "hash": "2073180340966672711"
+        },
+        {
+          "file": "src/checkout/chart/templates/security-group.yaml",
+          "hash": "3610249714097431182"
+        },
+        {
+          "file": "src/checkout/chart/templates/service.yaml",
+          "hash": "12789351502239344533"
+        },
+        {
+          "file": "src/checkout/chart/templates/serviceaccount.yaml",
+          "hash": "2028613279348438487"
+        },
+        {
+          "file": "src/checkout/chart/templates/tests/test-connection.yaml",
+          "hash": "782611502312044116"
+        },
+        {
+          "file": "src/checkout/chart/values.yaml",
+          "hash": "3304550589021671408"
+        },
+        {
+          "file": "src/checkout/docker-compose.yml",
+          "hash": "3917108615917737680"
+        },
+        {
+          "file": "src/checkout/eslint.config.mjs",
+          "hash": "16904305938752188016",
+          "deps": [
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "src/checkout/nest-cli.json",
+          "hash": "5274966848722555650"
+        },
+        {
+          "file": "src/checkout/openapi.yml",
+          "hash": "15744199610593885276"
+        },
+        {
+          "file": "src/checkout/package.json",
+          "hash": "16171856554852805007",
+          "deps": [
+            "npm:@types/node",
+            "npm:prettier",
+            "npm:source-map-support",
+            "npm:tsconfig-paths",
+            "npm:typescript",
+            "npm:typescript-eslint"
+          ]
+        },
+        {
+          "file": "src/checkout/project.json",
+          "hash": "10455107276508950238"
+        },
+        {
+          "file": "src/checkout/scripts/generate-clients.sh",
+          "hash": "12513302755452244121"
+        },
+        {
+          "file": "src/checkout/scripts/generate-openapi-spec.sh",
+          "hash": "14029190103941760490"
+        },
+        {
+          "file": "src/checkout/scripts/oss.source",
+          "hash": "2932756257769800403"
+        },
+        {
+          "file": "src/checkout/src/app.controller.ts",
+          "hash": "6902366023825734018"
+        },
+        {
+          "file": "src/checkout/src/app.module.ts",
+          "hash": "11641233325573658861"
+        },
+        {
+          "file": "src/checkout/src/chaos/chaos.controller.ts",
+          "hash": "8698410049585387899"
+        },
+        {
+          "file": "src/checkout/src/chaos/chaos.health.ts",
+          "hash": "8750597522636455034"
+        },
+        {
+          "file": "src/checkout/src/chaos/chaos.middleware.ts",
+          "hash": "15082474750618389069"
+        },
+        {
+          "file": "src/checkout/src/chaos/chaos.service.ts",
+          "hash": "2356707857652416850"
+        },
+        {
+          "file": "src/checkout/src/checkout/checkout.controller.ts",
+          "hash": "10046908285658929912"
+        },
+        {
+          "file": "src/checkout/src/checkout/checkout.module.ts",
+          "hash": "12263982534656199508"
+        },
+        {
+          "file": "src/checkout/src/checkout/checkout.service.ts",
+          "hash": "10201555547806543957"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/Checkout.ts",
+          "hash": "16347961698550539916"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/CheckoutRequest.ts",
+          "hash": "5654786066841013428"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/CheckoutSubmitted.ts",
+          "hash": "3347088772251704548"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/Item.ts",
+          "hash": "7720804297733047918"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/ItemRequest.ts",
+          "hash": "13631410145761319292"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/ShippingAddress.ts",
+          "hash": "15801158322549532903"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/ShippingOption.ts",
+          "hash": "7751753795120214500"
+        },
+        {
+          "file": "src/checkout/src/checkout/models/ShippingRates.ts",
+          "hash": "11454377820026303350"
+        },
+        {
+          "file": "src/checkout/src/checkout/orders/HttpOrdersService.ts",
+          "hash": "5805202792993351651"
+        },
+        {
+          "file": "src/checkout/src/checkout/orders/IOrdersService.ts",
+          "hash": "12179631132345838031"
+        },
+        {
+          "file": "src/checkout/src/checkout/orders/MockOrdersService.ts",
+          "hash": "987491053597726250"
+        },
+        {
+          "file": "src/checkout/src/checkout/orders/index.ts",
+          "hash": "13317044122994089439"
+        },
+        {
+          "file": "src/checkout/src/checkout/repositories/ICheckoutRepository.ts",
+          "hash": "13977333936313676137"
+        },
+        {
+          "file": "src/checkout/src/checkout/repositories/InMemoryCheckoutRepository.ts",
+          "hash": "16054847486724565720"
+        },
+        {
+          "file": "src/checkout/src/checkout/repositories/RedisCheckoutRepository.ts",
+          "hash": "2484984913350969767"
+        },
+        {
+          "file": "src/checkout/src/checkout/repositories/index.ts",
+          "hash": "1017000384947997334"
+        },
+        {
+          "file": "src/checkout/src/checkout/shipping/IShippingService.ts",
+          "hash": "18303728824430751201"
+        },
+        {
+          "file": "src/checkout/src/checkout/shipping/MockShippingService.ts",
+          "hash": "3876894978815614443"
+        },
+        {
+          "file": "src/checkout/src/checkout/shipping/index.ts",
+          "hash": "10844305026514332363"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/.gitignore",
+          "hash": "14031326617291468971"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/.openapi-generator-ignore",
+          "hash": "5921108589004068994"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/.openapi-generator/VERSION",
+          "hash": "16149951185885962621"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/api.ts",
+          "hash": "5608454543236773154"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/api/apis.ts",
+          "hash": "6908948006340402676"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/api/ordersApi.ts",
+          "hash": "144937703600929140"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/git_push.sh",
+          "hash": "10588402832133853971"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/model/existingOrder.ts",
+          "hash": "3286111557479765739"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/model/models.ts",
+          "hash": "2749726919195194495"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/model/order.ts",
+          "hash": "6229477548019885797"
+        },
+        {
+          "file": "src/checkout/src/clients/orders/model/orderItem.ts",
+          "hash": "2646264946745860867"
+        },
+        {
+          "file": "src/checkout/src/config/configuration.ts",
+          "hash": "13179863227154749582"
+        },
+        {
+          "file": "src/checkout/src/main.ts",
+          "hash": "14350176533344979420"
+        },
+        {
+          "file": "src/checkout/src/middleware/logger.middleware.ts",
+          "hash": "2065629801475838289"
+        },
+        {
+          "file": "src/checkout/src/tracing.ts",
+          "hash": "9253389733508417734"
+        },
+        {
+          "file": "src/checkout/test/app.e2e-spec.ts",
+          "hash": "11127960556854848761"
+        },
+        {
+          "file": "src/checkout/test/chaos.e2e-spec.ts",
+          "hash": "11908245385733324064"
+        },
+        {
+          "file": "src/checkout/test/jest-e2e.json",
+          "hash": "7570273541430074424"
+        },
+        {
+          "file": "src/checkout/tsconfig.build.json",
+          "hash": "276845246908739715"
+        },
+        {
+          "file": "src/checkout/tsconfig.json",
+          "hash": "13981730856712838880"
+        },
+        {
+          "file": "src/checkout/yarn.lock",
+          "hash": "16134708354805035701"
+        }
+      ],
+      "load-generator": [
+        {
+          "file": "src/load-generator/.dockerignore",
+          "hash": "6648952166835576627"
+        },
+        {
+          "file": "src/load-generator/.gitignore",
+          "hash": "2303642404724327591"
+        },
+        {
+          "file": "src/load-generator/Dockerfile",
+          "hash": "9416521249882535941"
+        },
+        {
+          "file": "src/load-generator/Dockerfile.run",
+          "hash": "7492397768606862662"
+        },
+        {
+          "file": "src/load-generator/README.md",
+          "hash": "6848125736499198446"
+        },
+        {
+          "file": "src/load-generator/helpers.js",
+          "hash": "9978319222993798461"
+        },
+        {
+          "file": "src/load-generator/package.json",
+          "hash": "11063264192009675010"
+        },
+        {
+          "file": "src/load-generator/project.json",
+          "hash": "628262511666681649"
+        },
+        {
+          "file": "src/load-generator/scenario.yml",
+          "hash": "14385355772097693634"
+        },
+        {
+          "file": "src/load-generator/scripts/run-docker.sh",
+          "hash": "1776791626115866032"
+        },
+        {
+          "file": "src/load-generator/scripts/run-test.sh",
+          "hash": "15837396630956972414"
+        },
+        {
+          "file": "src/load-generator/yarn.lock",
+          "hash": "15595062269775398835"
+        }
+      ],
+      "attribution": [
+        {
+          "file": "oss/attribution/package.json",
+          "hash": "6990750079519708458",
+          "deps": [
+            "npm:@types/fs-extra",
+            "npm:@types/node@20.19.13",
+            "npm:@types/node-fetch",
+            "npm:typescript",
+            "npm:axios",
+            "npm:fs-extra",
+            "npm:handlebars"
+          ]
+        },
+        {
+          "file": "oss/attribution/project.json",
+          "hash": "12482865908344826176"
+        },
+        {
+          "file": "oss/attribution/src/main.ts",
+          "hash": "8768999357031579680",
+          "deps": [
+            "npm:fs-extra",
+            "npm:axios",
+            "npm:handlebars"
+          ]
+        },
+        {
+          "file": "oss/attribution/tsconfig.json",
+          "hash": "6867313083222676369"
+        }
+      ],
+      "terraform-eks-default": [
+        {
+          "file": "terraform/eks/default/README.md",
+          "hash": "9780947086308388238"
+        },
+        {
+          "file": "terraform/eks/default/data.tf",
+          "hash": "15831580621594700716"
+        },
+        {
+          "file": "terraform/eks/default/iam.tf",
+          "hash": "9100658395874068108"
+        },
+        {
+          "file": "terraform/eks/default/kubernetes.tf",
+          "hash": "17383000953412926667"
+        },
+        {
+          "file": "terraform/eks/default/main.tf",
+          "hash": "7050114944045912231"
+        },
+        {
+          "file": "terraform/eks/default/opentelemetry.tf",
+          "hash": "16538934698337778461"
+        },
+        {
+          "file": "terraform/eks/default/output.tf",
+          "hash": "4629811399625086785"
+        },
+        {
+          "file": "terraform/eks/default/project.json",
+          "hash": "6348094771172967717"
+        },
+        {
+          "file": "terraform/eks/default/sg.tf",
+          "hash": "1266066978908014908"
+        },
+        {
+          "file": "terraform/eks/default/values/assets.yaml",
+          "hash": "6512126209461254283"
+        },
+        {
+          "file": "terraform/eks/default/values/carts.yaml",
+          "hash": "7003906323466943961"
+        },
+        {
+          "file": "terraform/eks/default/values/catalog.yaml",
+          "hash": "16264302878092768052"
+        },
+        {
+          "file": "terraform/eks/default/values/checkout.yaml",
+          "hash": "11092901292232167022"
+        },
+        {
+          "file": "terraform/eks/default/values/opentelemetry.yaml",
+          "hash": "7899140534652849353"
+        },
+        {
+          "file": "terraform/eks/default/values/orders.yaml",
+          "hash": "10051910639205080611"
+        },
+        {
+          "file": "terraform/eks/default/values/ui.yaml",
+          "hash": "8101517381672683392"
+        },
+        {
+          "file": "terraform/eks/default/variables.tf",
+          "hash": "15574925720661516633"
+        },
+        {
+          "file": "terraform/eks/default/versions.tf",
+          "hash": "7207618918865442068"
+        }
+      ],
+      "catalog": [
+        {
+          "file": "src/catalog/.dockerignore",
+          "hash": "691524769974653321"
+        },
+        {
+          "file": "src/catalog/.gitignore",
+          "hash": "15140318073462105527"
+        },
+        {
+          "file": "src/catalog/ATTRIBUTION.md",
+          "hash": "6677793025956171977"
+        },
+        {
+          "file": "src/catalog/Dockerfile",
+          "hash": "10825922559633382802"
+        },
+        {
+          "file": "src/catalog/README.md",
+          "hash": "10514623717824981170"
+        },
+        {
+          "file": "src/catalog/api/catalog.go",
+          "hash": "12143451306085544353"
+        },
+        {
+          "file": "src/catalog/chart/.helmignore",
+          "hash": "9835375496508434033"
+        },
+        {
+          "file": "src/catalog/chart/Chart.yaml",
+          "hash": "8314315201544626114"
+        },
+        {
+          "file": "src/catalog/chart/templates/NOTES.txt",
+          "hash": "5357029557284028873"
+        },
+        {
+          "file": "src/catalog/chart/templates/_helpers.tpl",
+          "hash": "2620343507980286963"
+        },
+        {
+          "file": "src/catalog/chart/templates/configmap.yml",
+          "hash": "17522847892954566576"
+        },
+        {
+          "file": "src/catalog/chart/templates/deployment.yaml",
+          "hash": "14027064234963681637"
+        },
+        {
+          "file": "src/catalog/chart/templates/hpa.yaml",
+          "hash": "12586535631132290955"
+        },
+        {
+          "file": "src/catalog/chart/templates/mysql-service.yaml",
+          "hash": "7750905894465785159"
+        },
+        {
+          "file": "src/catalog/chart/templates/mysql-statefulset.yaml",
+          "hash": "554085906637874609"
+        },
+        {
+          "file": "src/catalog/chart/templates/pdb.yaml",
+          "hash": "3218354344965185599"
+        },
+        {
+          "file": "src/catalog/chart/templates/secret.yaml",
+          "hash": "7561717699830633580"
+        },
+        {
+          "file": "src/catalog/chart/templates/security-group.yaml",
+          "hash": "16398163519521530713"
+        },
+        {
+          "file": "src/catalog/chart/templates/service.yaml",
+          "hash": "2799344039745285756"
+        },
+        {
+          "file": "src/catalog/chart/templates/serviceaccount.yaml",
+          "hash": "13251615333834192891"
+        },
+        {
+          "file": "src/catalog/chart/templates/tests/test-connection.yaml",
+          "hash": "8390595470996515137"
+        },
+        {
+          "file": "src/catalog/chart/values.yaml",
+          "hash": "12485637716449191803"
+        },
+        {
+          "file": "src/catalog/config/config.go",
+          "hash": "16373134230071976705"
+        },
+        {
+          "file": "src/catalog/controller/controller.go",
+          "hash": "13503907050788556724"
+        },
+        {
+          "file": "src/catalog/docker-compose.yml",
+          "hash": "17830387371761017557"
+        },
+        {
+          "file": "src/catalog/go.mod",
+          "hash": "182789938436846029"
+        },
+        {
+          "file": "src/catalog/go.sum",
+          "hash": "12382106668997624216"
+        },
+        {
+          "file": "src/catalog/httputil/error.go",
+          "hash": "6926112059824389597"
+        },
+        {
+          "file": "src/catalog/main.go",
+          "hash": "1813627728624898286"
+        },
+        {
+          "file": "src/catalog/middleware/chaos.go",
+          "hash": "1762515735521796589"
+        },
+        {
+          "file": "src/catalog/model/products.go",
+          "hash": "18003054144636966753"
+        },
+        {
+          "file": "src/catalog/model/tags.go",
+          "hash": "18370902794472259423"
+        },
+        {
+          "file": "src/catalog/openapi.yml",
+          "hash": "5282297536320398420"
+        },
+        {
+          "file": "src/catalog/project.json",
+          "hash": "9720062995609952206"
+        },
+        {
+          "file": "src/catalog/repository/data.go",
+          "hash": "14103595050312500957"
+        },
+        {
+          "file": "src/catalog/repository/products.json",
+          "hash": "3515971256987505025"
+        },
+        {
+          "file": "src/catalog/repository/repository.go",
+          "hash": "4046994581422838858"
+        },
+        {
+          "file": "src/catalog/repository/tags.json",
+          "hash": "7155814416677129534"
+        },
+        {
+          "file": "src/catalog/scripts/oss.source",
+          "hash": "15260507278011217631"
+        },
+        {
+          "file": "src/catalog/test/chaos_middleware_test.go",
+          "hash": "3943669109703093255"
+        },
+        {
+          "file": "src/catalog/test/controller_test.go",
+          "hash": "9039981355714633078"
+        },
+        {
+          "file": "src/catalog/test/main_test.go",
+          "hash": "16221477392073426373"
+        }
+      ],
+      "cart": [
+        {
+          "file": "src/cart/.dockerignore",
+          "hash": "17922673886393484375"
+        },
+        {
+          "file": "src/cart/.gitignore",
+          "hash": "6534679512303151434"
+        },
+        {
+          "file": "src/cart/.mvn/wrapper/maven-wrapper.properties",
+          "hash": "9046932976606372536"
+        },
+        {
+          "file": "src/cart/ATTRIBUTION.md",
+          "hash": "16504932575255565107"
+        },
+        {
+          "file": "src/cart/Dockerfile",
+          "hash": "9558963599768664115"
+        },
+        {
+          "file": "src/cart/README.md",
+          "hash": "14954638731832054357"
+        },
+        {
+          "file": "src/cart/chart/.helmignore",
+          "hash": "9835375496508434033"
+        },
+        {
+          "file": "src/cart/chart/Chart.yaml",
+          "hash": "10606607791887660477"
+        },
+        {
+          "file": "src/cart/chart/templates/NOTES.txt",
+          "hash": "7195533673066004521"
+        },
+        {
+          "file": "src/cart/chart/templates/_helpers.tpl",
+          "hash": "15175582684066722284"
+        },
+        {
+          "file": "src/cart/chart/templates/configmap.yaml",
+          "hash": "6249234509214378014"
+        },
+        {
+          "file": "src/cart/chart/templates/deployment.yaml",
+          "hash": "11209987149387731681"
+        },
+        {
+          "file": "src/cart/chart/templates/dynamodb-deployment.yaml",
+          "hash": "3331283204334358396"
+        },
+        {
+          "file": "src/cart/chart/templates/dynamodb-service.yaml",
+          "hash": "16767674672245862803"
+        },
+        {
+          "file": "src/cart/chart/templates/hpa.yaml",
+          "hash": "3288017236302753968"
+        },
+        {
+          "file": "src/cart/chart/templates/pdb.yaml",
+          "hash": "12171486174998415697"
+        },
+        {
+          "file": "src/cart/chart/templates/service.yaml",
+          "hash": "13143580319987446406"
+        },
+        {
+          "file": "src/cart/chart/templates/serviceaccount.yaml",
+          "hash": "6184425628293405455"
+        },
+        {
+          "file": "src/cart/chart/templates/tests/test-connection.yaml",
+          "hash": "6389154783547512019"
+        },
+        {
+          "file": "src/cart/chart/values.yaml",
+          "hash": "7468879966412877465"
+        },
+        {
+          "file": "src/cart/docker-compose.yml",
+          "hash": "16034144390114317490"
+        },
+        {
+          "file": "src/cart/mvnw",
+          "hash": "15069388377727069083"
+        },
+        {
+          "file": "src/cart/mvnw.cmd",
+          "hash": "1237986550895226753"
+        },
+        {
+          "file": "src/cart/openapi.yml",
+          "hash": "7459047645750844870"
+        },
+        {
+          "file": "src/cart/pom.xml",
+          "hash": "4506131239224064254"
+        },
+        {
+          "file": "src/cart/project.json",
+          "hash": "16504468740048845779"
+        },
+        {
+          "file": "src/cart/scripts/generate-openapi-spec.sh",
+          "hash": "9489951963705566905"
+        },
+        {
+          "file": "src/cart/scripts/oss.source",
+          "hash": "10754368131510360998"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/CartApplication.java",
+          "hash": "9269337159474105470"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/action/FirstResultOrDefault.java",
+          "hash": "514112133559872378"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/chaos/ChaosController.java",
+          "hash": "2477480926558926055"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/chaos/ChaosFilter.java",
+          "hash": "3887955818456162265"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/chaos/ChaosHealthIndicator.java",
+          "hash": "7256464472984499423"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/chaos/ChaosService.java",
+          "hash": "14593760564107904097"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/config/DynamoDBConfiguration.java",
+          "hash": "6928778184696451732"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/config/DynamoDBProperties.java",
+          "hash": "9294489352048705779"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/config/InMemoryConfiguration.java",
+          "hash": "1490853528613058460"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/config/OpenAPIConfig.java",
+          "hash": "13242588407882695170"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/diagnostics/DynamoFailureAnalyzer.java",
+          "hash": "10156574939605273125"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/repositories/CartEntity.java",
+          "hash": "11517627326980061191"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/repositories/ItemEntity.java",
+          "hash": "7958576684393245785"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/repositories/dynamo/entities/DynamoItemEntity.java",
+          "hash": "17843389812028182252"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/services/CartService.java",
+          "hash": "12157360697420432017"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/services/DynamoDBCartService.java",
+          "hash": "1156350292807680255"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/services/InMemoryCartService.java",
+          "hash": "18307008606761155337"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/web/CartsController.java",
+          "hash": "17088532748542443115"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/web/TopologyController.java",
+          "hash": "13367601006852820625"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/web/api/Cart.java",
+          "hash": "6538379499377558808"
+        },
+        {
+          "file": "src/cart/src/main/java/com/amazon/sample/carts/web/api/Item.java",
+          "hash": "4628779439846185627"
+        },
+        {
+          "file": "src/cart/src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+          "hash": "2534372526168826112"
+        },
+        {
+          "file": "src/cart/src/main/resources/META-INF/spring.factories",
+          "hash": "13140342478746388996"
+        },
+        {
+          "file": "src/cart/src/main/resources/application-prod.yml",
+          "hash": "4837222531533989997"
+        },
+        {
+          "file": "src/cart/src/main/resources/application.yml",
+          "hash": "2419405817461523946"
+        },
+        {
+          "file": "src/cart/src/test/java/com/amazon/sample/carts/CartsApplicationTests.java",
+          "hash": "14433126588420780416"
+        },
+        {
+          "file": "src/cart/src/test/java/com/amazon/sample/carts/chaos/ChaosIntegrationTests.java",
+          "hash": "5206022293984535788"
+        },
+        {
+          "file": "src/cart/src/test/java/com/amazon/sample/carts/services/AbstractServiceTests.java",
+          "hash": "6991156750316202485"
+        },
+        {
+          "file": "src/cart/src/test/java/com/amazon/sample/carts/services/DynamoDBCartServiceIntegrationTest.java",
+          "hash": "17640607940708278939"
+        },
+        {
+          "file": "src/cart/src/test/java/com/amazon/sample/carts/util/TestUtil.java",
+          "hash": "9190081736332134720"
+        },
+        {
+          "file": "src/cart/src/test/java/com/amazon/sample/carts/web/CartsControllerTests.java",
+          "hash": "14741139144092281830"
+        }
+      ],
+      "orders": [
+        {
+          "file": "src/orders/.dockerignore",
+          "hash": "17922673886393484375"
+        },
+        {
+          "file": "src/orders/.gitignore",
+          "hash": "6534679512303151434"
+        },
+        {
+          "file": "src/orders/.mvn/wrapper/maven-wrapper.properties",
+          "hash": "9046932976606372536"
+        },
+        {
+          "file": "src/orders/ATTRIBUTION.md",
+          "hash": "2661234092991213469"
+        },
+        {
+          "file": "src/orders/Dockerfile",
+          "hash": "17099565199567510180"
+        },
+        {
+          "file": "src/orders/README.md",
+          "hash": "15262663326785013550"
+        },
+        {
+          "file": "src/orders/chart/.helmignore",
+          "hash": "9835375496508434033"
+        },
+        {
+          "file": "src/orders/chart/Chart.yaml",
+          "hash": "15443663979823356255"
+        },
+        {
+          "file": "src/orders/chart/templates/NOTES.txt",
+          "hash": "15100701425045782768"
+        },
+        {
+          "file": "src/orders/chart/templates/_helpers.tpl",
+          "hash": "829888230213682465"
+        },
+        {
+          "file": "src/orders/chart/templates/configmap.yml",
+          "hash": "4888673942077357328"
+        },
+        {
+          "file": "src/orders/chart/templates/deployment.yaml",
+          "hash": "2222294519519528823"
+        },
+        {
+          "file": "src/orders/chart/templates/hpa.yaml",
+          "hash": "12374163723723134714"
+        },
+        {
+          "file": "src/orders/chart/templates/pdb.yaml",
+          "hash": "4621874197245277794"
+        },
+        {
+          "file": "src/orders/chart/templates/postgresql-service.yaml",
+          "hash": "1453670348948170346"
+        },
+        {
+          "file": "src/orders/chart/templates/postgresql-statefulset.yaml",
+          "hash": "9492353154108689654"
+        },
+        {
+          "file": "src/orders/chart/templates/rabbitmq-secret.yaml",
+          "hash": "13320739979805401251"
+        },
+        {
+          "file": "src/orders/chart/templates/rabbitmq-service.yaml",
+          "hash": "18245359584558540624"
+        },
+        {
+          "file": "src/orders/chart/templates/rabbitmq-statefulset.yaml",
+          "hash": "1705941657518446402"
+        },
+        {
+          "file": "src/orders/chart/templates/secret-db.yaml",
+          "hash": "608018526712641967"
+        },
+        {
+          "file": "src/orders/chart/templates/security-group.yaml",
+          "hash": "5705071744852650692"
+        },
+        {
+          "file": "src/orders/chart/templates/service.yaml",
+          "hash": "7600443712156158094"
+        },
+        {
+          "file": "src/orders/chart/templates/serviceaccount.yaml",
+          "hash": "1822235472138083636"
+        },
+        {
+          "file": "src/orders/chart/templates/tests/test-connection.yaml",
+          "hash": "8095239542047074202"
+        },
+        {
+          "file": "src/orders/chart/values.yaml",
+          "hash": "175532723176127610"
+        },
+        {
+          "file": "src/orders/docker-compose.yml",
+          "hash": "13496910885303146763"
+        },
+        {
+          "file": "src/orders/events/order-cancelled-event.schema.json",
+          "hash": "11879042690935483267"
+        },
+        {
+          "file": "src/orders/events/order-created-event.schema.json",
+          "hash": "18170817611992884342"
+        },
+        {
+          "file": "src/orders/events/order.schema.json",
+          "hash": "2035486864559711540"
+        },
+        {
+          "file": "src/orders/mvnw",
+          "hash": "15069388377727069083"
+        },
+        {
+          "file": "src/orders/mvnw.cmd",
+          "hash": "1237986550895226753"
+        },
+        {
+          "file": "src/orders/openapi.yml",
+          "hash": "17414422896572543288"
+        },
+        {
+          "file": "src/orders/pom.xml",
+          "hash": "10965400509337190343"
+        },
+        {
+          "file": "src/orders/project.json",
+          "hash": "13949135879012387593"
+        },
+        {
+          "file": "src/orders/scripts/generate-events.sh",
+          "hash": "7298297618453481965"
+        },
+        {
+          "file": "src/orders/scripts/generate-openapi-spec.sh",
+          "hash": "11428307443817286256"
+        },
+        {
+          "file": "src/orders/scripts/oss.source",
+          "hash": "15120557339364410708"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/events/orders/Order.java",
+          "hash": "12165483372810884747"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/events/orders/OrderCancelledEvent.java",
+          "hash": "7001001565535951724"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/events/orders/OrderCreatedEvent.java",
+          "hash": "6570861214887077803"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/OrdersApplication.java",
+          "hash": "13704935597980552464"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/chaos/ChaosController.java",
+          "hash": "465392572744566300"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/chaos/ChaosFilter.java",
+          "hash": "1548282259888620499"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/chaos/ChaosHealthIndicator.java",
+          "hash": "12480972171585180227"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/chaos/ChaosService.java",
+          "hash": "5833851036808479011"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/DataSourceConfig.java",
+          "hash": "10327629733390266850"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/DatabaseProperties.java",
+          "hash": "9503247443287057580"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/OpenAPIConfig.java",
+          "hash": "5798713965137734333"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/PersistenceConfig.java",
+          "hash": "274114543696445338"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/messaging/ApplicationEnvironmentPreparedListener.java",
+          "hash": "12194099866651368947"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/messaging/InMemoryMessagingConfig.java",
+          "hash": "443452437990151242"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/messaging/MessagingProperties.java",
+          "hash": "5771265389907587812"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/messaging/RabbitMQMessagingConfig.java",
+          "hash": "2582842288291526285"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/messaging/RabbitMQProperties.java",
+          "hash": "5468529711458561181"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/config/messaging/SqsMessagingConfig.java",
+          "hash": "6778402621838468643"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/entities/OrderEntity.java",
+          "hash": "4493360686250287313"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/entities/OrderItemEntity.java",
+          "hash": "10199499952838410654"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/entities/ShippingAddressEntity.java",
+          "hash": "5854119324548969002"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/messaging/MessagingProvider.java",
+          "hash": "3256354908150234883"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/messaging/OrdersEventHandler.java",
+          "hash": "1096102819343958953"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/messaging/inmemory/InMemoryMessagingProvider.java",
+          "hash": "758143428841084121"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/messaging/rabbitmq/RabbitMQMessagingProvider.java",
+          "hash": "11112316657233635716"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/messaging/sqs/SqsMessagingProvider.java",
+          "hash": "5934134445777331124"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/metrics/OrdersMetrics.java",
+          "hash": "7292404101469108184"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/repositories/OrderRepository.java",
+          "hash": "6711152614875797081"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/services/OrderService.java",
+          "hash": "18259205738197402625"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/OrderController.java",
+          "hash": "17409703444780365148"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/TopologyController.java",
+          "hash": "17307085617129871949"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/payload/ExistingOrder.java",
+          "hash": "10624471845031483331"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/payload/Order.java",
+          "hash": "2072891689322695701"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/payload/OrderItem.java",
+          "hash": "10038349213037517084"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/payload/OrderItemMapper.java",
+          "hash": "1773129024582908350"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/payload/OrderMapper.java",
+          "hash": "49080757514526118"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/payload/ShippingAddress.java",
+          "hash": "1441437611875927431"
+        },
+        {
+          "file": "src/orders/src/main/java/com/amazon/sample/orders/web/payload/ShippingAddressMapper.java",
+          "hash": "7121006495160428396"
+        },
+        {
+          "file": "src/orders/src/main/resources/META-INF/additional-spring-configuration-metadata.json",
+          "hash": "6649252216867551281"
+        },
+        {
+          "file": "src/orders/src/main/resources/application-prod.yml",
+          "hash": "4837222531533989997"
+        },
+        {
+          "file": "src/orders/src/main/resources/application.yml",
+          "hash": "9888754776964330814"
+        },
+        {
+          "file": "src/orders/src/main/resources/db/migration/V1__Initial.sql",
+          "hash": "16231519122582422718"
+        },
+        {
+          "file": "src/orders/src/test/java/com/amazon/sample/orders/OrdersApplicationTests.java",
+          "hash": "587193859247419301"
+        },
+        {
+          "file": "src/orders/src/test/java/com/amazon/sample/orders/chaos/ChaosIntegrationTests.java",
+          "hash": "5133491416615651351"
+        },
+        {
+          "file": "src/orders/src/test/java/com/amazon/sample/orders/metrics/OrdersMetricsTests.java",
+          "hash": "11978915639514705608"
+        },
+        {
+          "file": "src/orders/src/test/java/com/amazon/sample/orders/services/OrderServicePostgresTests.java",
+          "hash": "15627106637412347600"
+        }
+      ],
+      "terraform-ecs-default": [
+        {
+          "file": "terraform/ecs/default/README.md",
+          "hash": "15553674100651838096"
+        },
+        {
+          "file": "terraform/ecs/default/main.tf",
+          "hash": "14625921150041701375"
+        },
+        {
+          "file": "terraform/ecs/default/output.tf",
+          "hash": "15583682851863860785"
+        },
+        {
+          "file": "terraform/ecs/default/project.json",
+          "hash": "17678427454289681224"
+        },
+        {
+          "file": "terraform/ecs/default/variables.tf",
+          "hash": "8188630316978487626"
+        },
+        {
+          "file": "terraform/ecs/default/versions.tf",
+          "hash": "3487005561764489663"
+        }
+      ]
+    }
+  }
+}

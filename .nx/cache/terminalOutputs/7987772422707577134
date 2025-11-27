@@ -1,0 +1,315 @@
+
+[36m>[39m [7m[1m[36m Docker info [39m[22m[27m
+
+[command]/usr/local/bin/docker version
+Client:
+ Version:           29.0.1
+ API version:       1.52
+ Go version:        go1.25.4
+ Git commit:        eedd969
+ Built:             Fri Nov 14 16:16:57 2025
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.52.0 (210994)
+ Engine:
+  Version:          29.0.1
+  API version:      1.52 (minimum version 1.44)
+  Go version:       go1.25.4
+  Git commit:       198b5e3
+  Built:            Fri Nov 14 16:18:20 2025
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          v2.1.5
+  GitCommit:        fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc:
+  Version:          1.3.3
+  GitCommit:        v1.3.3-0-gd842d771
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[command]/usr/local/bin/docker info
+Client:
+ Version:    29.0.1
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v1.9.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-ai
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.29.1-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.40.3-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-compose
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.45
+    Path:     /Users/wealth/.docker/cli-plugins/docker-debug
+  desktop: Docker Desktop commands (Docker Inc.)
+    Version:  v0.2.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-desktop
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.31
+    Path:     /Users/wealth/.docker/cli-plugins/docker-extension
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-init
+  mcp: Docker MCP Plugin (Docker Inc.)
+    Version:  v0.28.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-mcp
+  model: Docker Model Runner (Docker Inc.)
+    Version:  v1.0.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-model
+  offload: Docker Offload (Docker Inc.)
+    Version:  v0.5.20
+    Path:     /Users/wealth/.docker/cli-plugins/docker-offload
+  pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)
+    Version:  v0.0.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-pass
+  sandbox: Docker Sandbox (Docker Inc.)
+    Version:  v0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sandbox
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)
+    Version:  0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sbom
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.18.3
+    Path:     /Users/wealth/.docker/cli-plugins/docker-scout
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 27
+ Server Version: 29.0.1
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Discovered Devices:
+  cdi: docker.com/gpu=webgpu
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.12.54-linuxkit
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: aarch64
+ CPUs: 10
+ Total Memory: 7.653GiB
+ Name: docker-desktop
+ ID: 9749fbda-ff4d-4cbd-8ae1-270cf7536c9e
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=unix:///Users/wealth/Library/Containers/com.docker.docker/Data/docker-cli.sock
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Firewall Backend: iptables
+
+
+[36m>[39m [7m[1m[36m Buildx version [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx version
+github.com/docker/buildx v0.29.1-desktop.1 28f6246ff24e2c05095e8741e48c48dcb2d3b4bc
+
+[36m>[39m [7m[1m[36m Build [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx build --file /Users/wealth/AWS_DEVOPS/retail-store-sample-app/src/cart/Dockerfile --iidfile /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-9QzAf9/iidfile --platform linux/amd64,linux/arm64 --tag 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest --load --metadata-file /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-9QzAf9/metadata-file --push src/cart
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.45kB done
+#1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+#1 DONE 0.0s
+
+#2 [linux/amd64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#2 DONE 2.4s
+
+#3 [linux/arm64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#3 DONE 2.4s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 121B done
+#4 DONE 0.0s
+
+#5 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#5 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d done
+#5 DONE 0.0s
+
+#6 [linux/amd64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#6 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d done
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 4.36kB done
+#7 DONE 0.0s
+
+#8 [linux/amd64 stage-1 2/6] RUN dnf --setopt=install_weak_deps=False install -q -y     java-21-amazon-corretto-headless     shadow-utils     &&     dnf clean all
+#8 CACHED
+
+#9 [linux/amd64 stage-1 5/6] COPY ./ATTRIBUTION.md ./LICENSES.md
+#9 CACHED
+
+#10 [linux/amd64 stage-1 4/6] WORKDIR /app
+#10 CACHED
+
+#11 [linux/amd64 build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/carts-0.0.1-SNAPSHOT.jar /app.jar
+#11 CACHED
+
+#12 [linux/amd64 build-env 7/9] COPY ./src ./src
+#12 CACHED
+
+#13 [linux/amd64 build-env 2/9] RUN dnf --setopt=install_weak_deps=False install -q -y     maven     java-21-amazon-corretto-headless     which     tar     gzip     &&     dnf clean all
+#13 CACHED
+
+#14 [linux/amd64 build-env 5/9] COPY pom.xml .
+#14 CACHED
+
+#15 [linux/amd64 build-env 4/9] COPY mvnw .
+#15 CACHED
+
+#16 [linux/amd64 build-env 3/9] COPY .mvn .mvn
+#16 CACHED
+
+#17 [linux/amd64 build-env 6/9] RUN ./mvnw dependency:go-offline -B -q
+#17 CACHED
+
+#18 [linux/amd64 stage-1 3/6] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#18 CACHED
+
+#19 [linux/amd64 stage-1 6/6] COPY --chown=appuser:appuser --from=build-env /app.jar .
+#19 CACHED
+
+#20 [linux/arm64 build-env 2/9] RUN dnf --setopt=install_weak_deps=False install -q -y     maven     java-21-amazon-corretto-headless     which     tar     gzip     &&     dnf clean all
+#20 CACHED
+
+#21 [linux/arm64 stage-1 3/6] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#21 CACHED
+
+#22 [linux/arm64 build-env 5/9] COPY pom.xml .
+#22 CACHED
+
+#23 [linux/arm64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     java-21-amazon-corretto-headless     shadow-utils     &&     dnf clean all
+#23 CACHED
+
+#24 [linux/arm64 build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/carts-0.0.1-SNAPSHOT.jar /app.jar
+#24 CACHED
+
+#25 [linux/arm64 stage-1 4/6] WORKDIR /app
+#25 CACHED
+
+#26 [linux/arm64 stage-1 5/6] COPY ./ATTRIBUTION.md ./LICENSES.md
+#26 CACHED
+
+#27 [linux/arm64 build-env 6/9] RUN ./mvnw dependency:go-offline -B -q
+#27 CACHED
+
+#28 [linux/arm64 build-env 4/9] COPY mvnw .
+#28 CACHED
+
+#29 [linux/arm64 build-env 7/9] COPY ./src ./src
+#29 CACHED
+
+#30 [linux/arm64 build-env 3/9] COPY .mvn .mvn
+#30 CACHED
+
+#31 [linux/arm64 stage-1 6/6] COPY --chown=appuser:appuser --from=build-env /app.jar .
+#31 CACHED
+
+#32 exporting to image
+#32 exporting layers done
+#32 exporting manifest sha256:5847d39451118d4d9f5b356a7c36bb740e737e9ee23c022c991649d56a671225 done
+#32 exporting config sha256:8e4abd145243cb978582e9df5651bba70e5eb23c9c196d34596d459f0d3cb839 done
+#32 exporting attestation manifest sha256:cc962fd30f524cd17fba503ff9562038460b176b841e9fdeec7377476039d2fc 0.0s done
+#32 exporting manifest sha256:6b0179b41ad52e7cf5eef323257d0f9dc862ba54cee8b0ed7433329074861548 done
+#32 exporting config sha256:9c2b687cd545b49c2603cffcb7517999f5b4c2dfd71f1e5a631c5fa2f8b541bc done
+#32 exporting attestation manifest sha256:705eef2022180a10fa11cf4d985baf9b826c3ea80d1f530108a181b4982ee857 done
+#32 exporting manifest list sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8
+#32 ...
+
+#33 exporting to image
+#33 exporting manifest sha256:5847d39451118d4d9f5b356a7c36bb740e737e9ee23c022c991649d56a671225 done
+#33 exporting config sha256:8e4abd145243cb978582e9df5651bba70e5eb23c9c196d34596d459f0d3cb839 done
+#33 exporting attestation manifest sha256:cc962fd30f524cd17fba503ff9562038460b176b841e9fdeec7377476039d2fc 0.0s done
+#33 exporting manifest sha256:6b0179b41ad52e7cf5eef323257d0f9dc862ba54cee8b0ed7433329074861548 done
+#33 exporting config sha256:9c2b687cd545b49c2603cffcb7517999f5b4c2dfd71f1e5a631c5fa2f8b541bc done
+#33 exporting attestation manifest sha256:705eef2022180a10fa11cf4d985baf9b826c3ea80d1f530108a181b4982ee857 0.0s done
+#33 exporting manifest list sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8 done
+#33 naming to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest done
+#33 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest done
+#33 DONE 0.1s
+
+#32 exporting to image
+#32 exporting manifest list sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8 0.0s done
+#32 naming to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest done
+#32 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest done
+#32 pushing layers
+#32 ...
+
+#34 [auth] sharing credentials for 318112817098.dkr.ecr.us-east-1.amazonaws.com
+#34 DONE 0.0s
+
+#32 exporting to image
+#32 pushing layers 689.5s done
+#32 pushing manifest for 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest@sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8
+#32 pushing manifest for 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest@sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8 3.5s done
+#32 DONE 693.2s
+
+#35 resolving provenance for metadata file
+#35 DONE 0.0s
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/xvykftrst0jkvv7s4sgntsemc
+
+[36m>[39m [7m[1m[36m ImageID [39m[22m[27m
+
+sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8
+
+[36m>[39m [7m[1m[36m Digest [39m[22m[27m
+
+sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8
+
+[36m>[39m [7m[1m[36m Metadata [39m[22m[27m
+
+{
+  "buildx.build.ref": "desktop-linux/desktop-linux/xvykftrst0jkvv7s4sgntsemc",
+  "containerimage.descriptor": {
+    "mediaType": "application/vnd.oci.image.index.v1+json",
+    "digest": "sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8",
+    "size": 1609
+  },
+  "containerimage.digest": "sha256:21cdad6288ae22dd89c7cf1655ce03dc7a61aac2e1fcfec8400fee1b530cb4c8",
+  "image.name": "318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest"
+}
+
+[36m>[39m [7m[1m[36m Removing temp folder /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-9QzAf9 [39m[22m[27m
+

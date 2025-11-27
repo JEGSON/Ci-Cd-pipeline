@@ -1,0 +1,20 @@
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+*.tfvars
+infrastructure-outputs.txt
+
+# Secrets
+*.pem
+*.key
+.env
+*password*
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# ECS task definitions (they contain passwords)
+ecs-tasks/*task-definition.json

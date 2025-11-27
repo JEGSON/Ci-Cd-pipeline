@@ -1,0 +1,55 @@
+{
+  "family": "retail-store-dev-catalog",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "256",
+  "memory": "512",
+  "executionRoleArn": "arn:aws:iam::318112817098:role/retail-store-dev-ecs-task-execution-role",
+  "taskRoleArn": "arn:aws:iam::318112817098:role/retail-store-dev-ecs-task-role",
+  "containerDefinitions": [
+    {
+      "name": "catalog",
+      "image": "318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/catalog:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        {
+          "name": "DB_ENDPOINT",
+          "value": "retail-store-dev-catalog-db.cyrew20e2n76.us-east-1.rds.amazonaws.com:3306"
+        },
+        {
+          "name": "DB_NAME",
+          "value": "catalog"
+        },
+        {
+          "name": "DB_USER",
+          "value": "admin"
+        },
+        {
+          "name": "DB_PASSWORD",
+          "value": "Abidemi1234!"
+        }
+      ],
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/retail-store-dev/catalog",
+          "awslogs-region": "us-east-1",
+          "awslogs-stream-prefix": "ecs"
+        }
+      },
+      "healthCheck": {
+        "command": ["CMD-SHELL", "wget --no-verbose --tries=1 --spider http://localhost:8080/health || exit 1"],
+        "interval": 30,
+        "timeout": 5,
+        "retries": 3,
+        "startPeriod": 60
+      }
+    }
+  ]
+}

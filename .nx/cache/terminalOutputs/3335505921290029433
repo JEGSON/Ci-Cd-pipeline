@@ -1,0 +1,514 @@
+
+[36m>[39m [7m[1m[36m Docker info [39m[22m[27m
+
+[command]/usr/local/bin/docker version
+Client:
+ Version:           29.0.1
+ API version:       1.52
+ Go version:        go1.25.4
+ Git commit:        eedd969
+ Built:             Fri Nov 14 16:16:57 2025
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.52.0 (210994)
+ Engine:
+  Version:          29.0.1
+  API version:      1.52 (minimum version 1.44)
+  Go version:       go1.25.4
+  Git commit:       198b5e3
+  Built:            Fri Nov 14 16:18:20 2025
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          v2.1.5
+  GitCommit:        fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc:
+  Version:          1.3.3
+  GitCommit:        v1.3.3-0-gd842d771
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[command]/usr/local/bin/docker info
+Client:
+ Version:    29.0.1
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v1.9.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-ai
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.29.1-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.40.3-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-compose
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.45
+    Path:     /Users/wealth/.docker/cli-plugins/docker-debug
+  desktop: Docker Desktop commands (Docker Inc.)
+    Version:  v0.2.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-desktop
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.31
+    Path:     /Users/wealth/.docker/cli-plugins/docker-extension
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-init
+  mcp: Docker MCP Plugin (Docker Inc.)
+    Version:  v0.28.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-mcp
+  model: Docker Model Runner (Docker Inc.)
+    Version:  v1.0.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-model
+  offload: Docker Offload (Docker Inc.)
+    Version:  v0.5.20
+    Path:     /Users/wealth/.docker/cli-plugins/docker-offload
+  pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)
+    Version:  v0.0.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-pass
+  sandbox: Docker Sandbox (Docker Inc.)
+    Version:  v0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sandbox
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)
+    Version:  0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sbom
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.18.3
+    Path:     /Users/wealth/.docker/cli-plugins/docker-scout
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 23
+ Server Version: 29.0.1
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Discovered Devices:
+  cdi: docker.com/gpu=webgpu
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.12.54-linuxkit
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: aarch64
+ CPUs: 10
+ Total Memory: 7.653GiB
+ Name: docker-desktop
+ ID: 9749fbda-ff4d-4cbd-8ae1-270cf7536c9e
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=unix:///Users/wealth/Library/Containers/com.docker.docker/Data/docker-cli.sock
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Firewall Backend: iptables
+
+
+[36m>[39m [7m[1m[36m Buildx version [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx version
+github.com/docker/buildx v0.29.1-desktop.1 28f6246ff24e2c05095e8741e48c48dcb2d3b4bc
+
+[36m>[39m [7m[1m[36m Build [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx build --file /Users/wealth/AWS_DEVOPS/retail-store-sample-app/src/cart/Dockerfile --iidfile /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-psWwOr/iidfile --platform linux/amd64,linux/arm64 --tag 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest --load --metadata-file /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-psWwOr/metadata-file --push src/cart
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.45kB done
+#1 WARN: FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+#1 DONE 0.0s
+
+#2 [linux/arm64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#2 DONE 2.0s
+
+#3 [linux/amd64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#3 DONE 2.0s
+
+#4 [linux/amd64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#4 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d done
+#4 sha256:1c7de4eb5ced9ea3f72366a34ec955a53e9b0f4ac53d332a155de21eb808d732 53.97MB / 53.97MB 5.8s done
+#4 extracting sha256:1c7de4eb5ced9ea3f72366a34ec955a53e9b0f4ac53d332a155de21eb808d732 0.8s done
+#4 DONE 6.6s
+
+#5 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#5 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d 0.0s done
+#5 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 52.87MB / 52.87MB 6.1s done
+#5 extracting sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 0.9s done
+#5 DONE 7.0s
+
+#6 [linux/arm64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     java-21-amazon-corretto-headless     shadow-utils     &&     dnf clean all
+#6 63.22 
+#6 63.22 Installed:
+#6 63.22   alsa-lib-1.2.7.2-1.amzn2023.0.2.aarch64                                       
+#6 63.22   cairo-1.18.0-4.amzn2023.0.3.aarch64                                           
+#6 63.22   chkconfig-1.15-2.amzn2023.0.2.aarch64                                         
+#6 63.22   dejavu-sans-fonts-2.37-16.amzn2023.0.2.noarch                                 
+#6 63.22   dejavu-sans-mono-fonts-2.37-16.amzn2023.0.2.noarch                            
+#6 63.22   dejavu-serif-fonts-2.37-16.amzn2023.0.2.noarch                                
+#6 63.22   fontconfig-2.13.94-2.amzn2023.0.2.aarch64                                     
+#6 63.22   fonts-filesystem-1:2.0.5-12.amzn2023.0.2.noarch                               
+#6 63.22   freetype-2.13.2-5.amzn2023.0.1.aarch64                                        
+#6 63.22   google-noto-fonts-common-20240401-1.amzn2023.0.2.noarch                       
+#6 63.22   google-noto-sans-vf-fonts-20240401-1.amzn2023.0.2.noarch                      
+#6 63.22   graphite2-1.3.14-7.amzn2023.0.2.aarch64                                       
+#6 63.22   harfbuzz-7.0.0-2.amzn2023.0.2.aarch64                                         
+#6 63.22   java-21-amazon-corretto-headless-1:21.0.9+10-1.amzn2023.1.aarch64             
+#6 63.22   javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch                           
+#6 63.22   langpacks-core-font-en-3.0-21.amzn2023.0.4.noarch                             
+#6 63.22   libX11-1.8.10-2.amzn2023.0.1.aarch64                                          
+#6 63.22   libX11-common-1.8.10-2.amzn2023.0.1.noarch                                    
+#6 63.22   libXau-1.0.11-6.amzn2023.0.1.aarch64                                          
+#6 63.22   libXext-1.3.6-1.amzn2023.0.1.aarch64                                          
+#6 63.22   libXrender-0.9.11-6.amzn2023.0.1.aarch64                                      
+#6 63.22   libbrotli-1.0.9-4.amzn2023.0.2.aarch64                                        
+#6 63.22   libjpeg-turbo-2.1.4-2.amzn2023.0.5.aarch64                                    
+#6 63.22   libpng-2:1.6.37-10.amzn2023.0.6.aarch64                                       
+#6 63.22   libsemanage-3.4-5.amzn2023.0.2.aarch64                                        
+#6 63.22   libxcb-1.17.0-1.amzn2023.0.1.aarch64                                          
+#6 63.22   pixman-0.43.4-1.amzn2023.0.4.aarch64                                          
+#6 63.22   shadow-utils-2:4.9-12.amzn2023.0.4.aarch64                                    
+#6 63.22   xml-common-0.6.3-56.amzn2023.0.2.noarch                                       
+#6 63.22 
+#6 63.37 9 files removed
+#6 DONE 63.5s
+
+#7 [linux/amd64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     java-21-amazon-corretto-headless     shadow-utils     &&     dnf clean all
+#7 72.70 
+#7 72.70 Installed:
+#7 72.70   alsa-lib-1.2.7.2-1.amzn2023.0.2.x86_64                                        
+#7 72.70   cairo-1.18.0-4.amzn2023.0.3.x86_64                                            
+#7 72.70   chkconfig-1.15-2.amzn2023.0.2.x86_64                                          
+#7 72.70   dejavu-sans-fonts-2.37-16.amzn2023.0.2.noarch                                 
+#7 72.70   dejavu-sans-mono-fonts-2.37-16.amzn2023.0.2.noarch                            
+#7 72.70   dejavu-serif-fonts-2.37-16.amzn2023.0.2.noarch                                
+#7 72.70   fontconfig-2.13.94-2.amzn2023.0.2.x86_64                                      
+#7 72.70   fonts-filesystem-1:2.0.5-12.amzn2023.0.2.noarch                               
+#7 72.70   freetype-2.13.2-5.amzn2023.0.1.x86_64                                         
+#7 72.70   google-noto-fonts-common-20240401-1.amzn2023.0.2.noarch                       
+#7 72.70   google-noto-sans-vf-fonts-20240401-1.amzn2023.0.2.noarch                      
+#7 72.70   graphite2-1.3.14-7.amzn2023.0.2.x86_64                                        
+#7 72.70   harfbuzz-7.0.0-2.amzn2023.0.2.x86_64                                          
+#7 72.70   java-21-amazon-corretto-headless-1:21.0.9+10-1.amzn2023.1.x86_64              
+#7 72.70   javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch                           
+#7 72.70   langpacks-core-font-en-3.0-21.amzn2023.0.4.noarch                             
+#7 72.70   libX11-1.8.10-2.amzn2023.0.1.x86_64                                           
+#7 72.70   libX11-common-1.8.10-2.amzn2023.0.1.noarch                                    
+#7 72.70   libXau-1.0.11-6.amzn2023.0.1.x86_64                                           
+#7 72.70   libXext-1.3.6-1.amzn2023.0.1.x86_64                                           
+#7 72.70   libXrender-0.9.11-6.amzn2023.0.1.x86_64                                       
+#7 72.70   libbrotli-1.0.9-4.amzn2023.0.2.x86_64                                         
+#7 72.70   libjpeg-turbo-2.1.4-2.amzn2023.0.5.x86_64                                     
+#7 72.70   libpng-2:1.6.37-10.amzn2023.0.6.x86_64                                        
+#7 72.70   libsemanage-3.4-5.amzn2023.0.2.x86_64                                         
+#7 72.70   libxcb-1.17.0-1.amzn2023.0.1.x86_64                                           
+#7 72.70   pixman-0.43.4-1.amzn2023.0.4.x86_64                                           
+#7 72.70   shadow-utils-2:4.9-12.amzn2023.0.4.x86_64                                     
+#7 72.70   xml-common-0.6.3-56.amzn2023.0.2.noarch                                       
+#7 72.70 
+#7 73.00 9 files removed
+#7 DONE 73.1s
+
+#8 [linux/arm64 build-env 2/9] RUN dnf --setopt=install_weak_deps=False install -q -y     maven     java-21-amazon-corretto-headless     which     tar     gzip     &&     dnf clean all
+#8 75.63 
+#8 75.63 Installed:
+#8 75.63   alsa-lib-1.2.7.2-1.amzn2023.0.2.aarch64                                       
+#8 75.63   apache-commons-cli-1.5.0-3.amzn2023.0.3.noarch                                
+#8 75.63   apache-commons-codec-1.15-6.amzn2023.0.3.noarch                               
+#8 75.63   apache-commons-io-1:2.8.0-7.amzn2023.0.5.noarch                               
+#8 75.63   apache-commons-lang3-3.18.0-1.amzn2023.0.1.noarch                             
+#8 75.63   atinject-1.0.5-3.amzn2023.0.3.noarch                                          
+#8 75.63   cairo-1.18.0-4.amzn2023.0.3.aarch64                                           
+#8 75.63   cdi-api-2.0.2-6.amzn2023.0.3.noarch                                           
+#8 75.63   chkconfig-1.15-2.amzn2023.0.2.aarch64                                         
+#8 75.63   dejavu-sans-fonts-2.37-16.amzn2023.0.2.noarch                                 
+#8 75.63   dejavu-sans-mono-fonts-2.37-16.amzn2023.0.2.noarch                            
+#8 75.63   dejavu-serif-fonts-2.37-16.amzn2023.0.2.noarch                                
+#8 75.63   fontconfig-2.13.94-2.amzn2023.0.2.aarch64                                     
+#8 75.63   fonts-filesystem-1:2.0.5-12.amzn2023.0.2.noarch                               
+#8 75.63   freetype-2.13.2-5.amzn2023.0.1.aarch64                                        
+#8 75.63   google-guice-4.2.3-8.amzn2023.0.6.noarch                                      
+#8 75.63   google-noto-fonts-common-20240401-1.amzn2023.0.2.noarch                       
+#8 75.63   google-noto-sans-vf-fonts-20240401-1.amzn2023.0.2.noarch                      
+#8 75.63   graphite2-1.3.14-7.amzn2023.0.2.aarch64                                       
+#8 75.63   guava-31.0.1-3.amzn2023.0.6.noarch                                            
+#8 75.63   gzip-1.12-1.amzn2023.0.1.aarch64                                              
+#8 75.63   harfbuzz-7.0.0-2.amzn2023.0.2.aarch64                                         
+#8 75.63   httpcomponents-client-4.5.13-4.amzn2023.0.4.noarch                            
+#8 75.63   httpcomponents-core-4.4.13-6.amzn2023.0.3.noarch                              
+#8 75.63   jakarta-annotations-1.3.5-13.amzn2023.0.3.noarch                              
+#8 75.63   jansi-2.4.0-3.amzn2023.0.3.aarch64                                            
+#8 75.63   java-17-amazon-corretto-devel-1:17.0.17+10-1.amzn2023.1.aarch64               
+#8 75.63   java-17-amazon-corretto-headless-1:17.0.17+10-1.amzn2023.1.aarch64            
+#8 75.63   java-21-amazon-corretto-headless-1:21.0.9+10-1.amzn2023.1.aarch64             
+#8 75.63   javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch                           
+#8 75.63   jcl-over-slf4j-1.7.32-3.amzn2023.0.4.noarch                                   
+#8 75.63   jsoup-1.16.1-4.amzn2023.0.2.noarch                                            
+#8 75.63   jsr-305-3.0.2-5.amzn2023.0.4.noarch                                           
+#8 75.63   langpacks-core-font-en-3.0-21.amzn2023.0.4.noarch                             
+#8 75.63   libX11-1.8.10-2.amzn2023.0.1.aarch64                                          
+#8 75.63   libX11-common-1.8.10-2.amzn2023.0.1.noarch                                    
+#8 75.63   libXau-1.0.11-6.amzn2023.0.1.aarch64                                          
+#8 75.63   libXext-1.3.6-1.amzn2023.0.1.aarch64                                          
+#8 75.63   libXrender-0.9.11-6.amzn2023.0.1.aarch64                                      
+#8 75.63   libbrotli-1.0.9-4.amzn2023.0.2.aarch64                                        
+#8 75.63   libjpeg-turbo-2.1.4-2.amzn2023.0.5.aarch64                                    
+#8 75.63   libpng-2:1.6.37-10.amzn2023.0.6.aarch64                                       
+#8 75.63   libxcb-1.17.0-1.amzn2023.0.1.aarch64                                          
+#8 75.63   maven-1:3.8.4-3.amzn2023.0.5.noarch                                           
+#8 75.63   maven-amazon-corretto17-1:3.8.4-3.amzn2023.0.5.noarch                         
+#8 75.63   maven-lib-1:3.8.4-3.amzn2023.0.5.noarch                                       
+#8 75.63   maven-resolver-1:1.7.3-3.amzn2023.0.4.noarch                                  
+#8 75.63   maven-shared-utils-3.3.4-4.amzn2023.0.4.noarch                                
+#8 75.63   maven-wagon-3.4.2-6.amzn2023.0.4.noarch                                       
+#8 75.63   pixman-0.43.4-1.amzn2023.0.4.aarch64                                          
+#8 75.63   plexus-cipher-1.8-3.amzn2023.0.3.noarch                                       
+#8 75.63   plexus-classworlds-2.6.0-10.amzn2023.0.4.noarch                               
+#8 75.63   plexus-containers-component-annotations-2.1.0-9.amzn2023.0.4.noarch           
+#8 75.63   plexus-interpolation-1.26-10.amzn2023.0.4.noarch                              
+#8 75.63   plexus-sec-dispatcher-2.0-3.amzn2023.0.3.noarch                               
+#8 75.63   plexus-utils-3.3.0-9.amzn2023.0.4.noarch                                      
+#8 75.63   publicsuffix-list-20240212-61.amzn2023.noarch                                 
+#8 75.63   sisu-1:0.3.4-9.amzn2023.0.4.noarch                                            
+#8 75.63   slf4j-1.7.32-3.amzn2023.0.4.noarch                                            
+#8 75.63   tar-2:1.34-1.amzn2023.0.4.aarch64                                             
+#8 75.63   which-2.21-26.amzn2023.0.2.aarch64                                            
+#8 75.63   xml-common-0.6.3-56.amzn2023.0.2.noarch                                       
+#8 75.63 
+#8 75.72 9 files removed
+#8 DONE 75.8s
+
+#9 [linux/arm64 build-env 3/9] COPY .mvn .mvn
+#9 DONE 0.0s
+
+#10 [linux/arm64 build-env 4/9] COPY mvnw .
+#10 DONE 0.0s
+
+#11 [linux/amd64 build-env 2/9] RUN dnf --setopt=install_weak_deps=False install -q -y     maven     java-21-amazon-corretto-headless     which     tar     gzip     &&     dnf clean all
+#11 87.36 
+#11 87.36 Installed:
+#11 87.36   alsa-lib-1.2.7.2-1.amzn2023.0.2.x86_64                                        
+#11 87.36   apache-commons-cli-1.5.0-3.amzn2023.0.3.noarch                                
+#11 87.36   apache-commons-codec-1.15-6.amzn2023.0.3.noarch                               
+#11 87.36   apache-commons-io-1:2.8.0-7.amzn2023.0.5.noarch                               
+#11 87.36   apache-commons-lang3-3.18.0-1.amzn2023.0.1.noarch                             
+#11 87.36   atinject-1.0.5-3.amzn2023.0.3.noarch                                          
+#11 87.36   cairo-1.18.0-4.amzn2023.0.3.x86_64                                            
+#11 87.36   cdi-api-2.0.2-6.amzn2023.0.3.noarch                                           
+#11 87.36   chkconfig-1.15-2.amzn2023.0.2.x86_64                                          
+#11 87.36   dejavu-sans-fonts-2.37-16.amzn2023.0.2.noarch                                 
+#11 87.36   dejavu-sans-mono-fonts-2.37-16.amzn2023.0.2.noarch                            
+#11 87.36   dejavu-serif-fonts-2.37-16.amzn2023.0.2.noarch                                
+#11 87.36   fontconfig-2.13.94-2.amzn2023.0.2.x86_64                                      
+#11 87.36   fonts-filesystem-1:2.0.5-12.amzn2023.0.2.noarch                               
+#11 87.36   freetype-2.13.2-5.amzn2023.0.1.x86_64                                         
+#11 87.36   google-guice-4.2.3-8.amzn2023.0.6.noarch                                      
+#11 87.36   google-noto-fonts-common-20240401-1.amzn2023.0.2.noarch                       
+#11 87.36   google-noto-sans-vf-fonts-20240401-1.amzn2023.0.2.noarch                      
+#11 87.36   graphite2-1.3.14-7.amzn2023.0.2.x86_64                                        
+#11 87.36   guava-31.0.1-3.amzn2023.0.6.noarch                                            
+#11 87.36   gzip-1.12-1.amzn2023.0.1.x86_64                                               
+#11 87.36   harfbuzz-7.0.0-2.amzn2023.0.2.x86_64                                          
+#11 87.36   httpcomponents-client-4.5.13-4.amzn2023.0.4.noarch                            
+#11 87.36   httpcomponents-core-4.4.13-6.amzn2023.0.3.noarch                              
+#11 87.36   jakarta-annotations-1.3.5-13.amzn2023.0.3.noarch                              
+#11 87.36   jansi-2.4.0-3.amzn2023.0.3.x86_64                                             
+#11 87.36   java-17-amazon-corretto-devel-1:17.0.17+10-1.amzn2023.1.x86_64                
+#11 87.36   java-17-amazon-corretto-headless-1:17.0.17+10-1.amzn2023.1.x86_64             
+#11 87.36   java-21-amazon-corretto-headless-1:21.0.9+10-1.amzn2023.1.x86_64              
+#11 87.36   javapackages-filesystem-6.0.0-7.amzn2023.0.6.noarch                           
+#11 87.36   jcl-over-slf4j-1.7.32-3.amzn2023.0.4.noarch                                   
+#11 87.36   jsoup-1.16.1-4.amzn2023.0.2.noarch                                            
+#11 87.36   jsr-305-3.0.2-5.amzn2023.0.4.noarch                                           
+#11 87.36   langpacks-core-font-en-3.0-21.amzn2023.0.4.noarch                             
+#11 87.36   libX11-1.8.10-2.amzn2023.0.1.x86_64                                           
+#11 87.36   libX11-common-1.8.10-2.amzn2023.0.1.noarch                                    
+#11 87.36   libXau-1.0.11-6.amzn2023.0.1.x86_64                                           
+#11 87.36   libXext-1.3.6-1.amzn2023.0.1.x86_64                                           
+#11 87.36   libXrender-0.9.11-6.amzn2023.0.1.x86_64                                       
+#11 87.36   libbrotli-1.0.9-4.amzn2023.0.2.x86_64                                         
+#11 87.36   libjpeg-turbo-2.1.4-2.amzn2023.0.5.x86_64                                     
+#11 87.36   libpng-2:1.6.37-10.amzn2023.0.6.x86_64                                        
+#11 87.36   libxcb-1.17.0-1.amzn2023.0.1.x86_64                                           
+#11 87.36   maven-1:3.8.4-3.amzn2023.0.5.noarch                                           
+#11 87.36   maven-amazon-corretto17-1:3.8.4-3.amzn2023.0.5.noarch                         
+#11 87.36   maven-lib-1:3.8.4-3.amzn2023.0.5.noarch                                       
+#11 87.36   maven-resolver-1:1.7.3-3.amzn2023.0.4.noarch                                  
+#11 87.36   maven-shared-utils-3.3.4-4.amzn2023.0.4.noarch                                
+#11 87.36   maven-wagon-3.4.2-6.amzn2023.0.4.noarch                                       
+#11 87.36   pixman-0.43.4-1.amzn2023.0.4.x86_64                                           
+#11 87.36   plexus-cipher-1.8-3.amzn2023.0.3.noarch                                       
+#11 87.36   plexus-classworlds-2.6.0-10.amzn2023.0.4.noarch                               
+#11 87.36   plexus-containers-component-annotations-2.1.0-9.amzn2023.0.4.noarch           
+#11 87.36   plexus-interpolation-1.26-10.amzn2023.0.4.noarch                              
+#11 87.36   plexus-sec-dispatcher-2.0-3.amzn2023.0.3.noarch                               
+#11 87.36   plexus-utils-3.3.0-9.amzn2023.0.4.noarch                                      
+#11 87.36   publicsuffix-list-20240212-61.amzn2023.noarch                                 
+#11 87.36   sisu-1:0.3.4-9.amzn2023.0.4.noarch                                            
+#11 87.36   slf4j-1.7.32-3.amzn2023.0.4.noarch                                            
+#11 87.36   tar-2:1.34-1.amzn2023.0.4.x86_64                                              
+#11 87.36   which-2.21-26.amzn2023.0.2.x86_64                                             
+#11 87.36   xml-common-0.6.3-56.amzn2023.0.2.noarch                                       
+#11 87.36 
+#11 87.65 9 files removed
+#11 DONE 87.8s
+
+#12 [linux/amd64 build-env 3/9] COPY .mvn .mvn
+#12 DONE 0.0s
+
+#13 [linux/amd64 build-env 4/9] COPY mvnw .
+#13 DONE 0.0s
+
+#14 [internal] load .dockerignore
+#14 transferring context: 121B done
+#14 DONE 0.0s
+
+#15 [internal] load build context
+#15 transferring context: 2.03MB 0.0s done
+#15 DONE 0.0s
+
+#16 [linux/arm64 build-env 3/9] COPY .mvn .mvn
+#16 CACHED
+
+#17 [linux/arm64 build-env 4/9] COPY mvnw .
+#17 CACHED
+
+#18 [linux/amd64 build-env 3/9] COPY .mvn .mvn
+#18 CACHED
+
+#19 [linux/amd64 build-env 4/9] COPY mvnw .
+#19 CACHED
+
+#20 [linux/amd64 build-env 5/9] COPY pom.xml .
+#20 DONE 0.1s
+
+#21 [linux/arm64 build-env 5/9] COPY pom.xml .
+#21 DONE 0.1s
+
+#22 [linux/arm64 stage-1 3/6] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#22 DONE 0.2s
+
+#23 [linux/arm64 build-env 6/9] RUN ./mvnw dependency:go-offline -B -q
+#23 ...
+
+#24 [linux/arm64 stage-1 4/6] WORKDIR /app
+#24 DONE 0.0s
+
+#25 [linux/arm64 stage-1 5/6] COPY ./ATTRIBUTION.md ./LICENSES.md
+#25 DONE 0.0s
+
+#26 [linux/amd64 stage-1 3/6] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#26 DONE 0.3s
+
+#27 [linux/amd64 stage-1 4/6] WORKDIR /app
+#27 DONE 0.0s
+
+#28 [linux/amd64 stage-1 5/6] COPY ./ATTRIBUTION.md ./LICENSES.md
+#28 DONE 0.0s
+
+#29 [linux/amd64 build-env 6/9] RUN ./mvnw dependency:go-offline -B -q
+#29 ...
+
+#23 [linux/arm64 build-env 6/9] RUN ./mvnw dependency:go-offline -B -q
+#23 DONE 150.3s
+
+#30 [linux/arm64 build-env 7/9] COPY ./src ./src
+#30 DONE 0.1s
+
+#29 [linux/amd64 build-env 6/9] RUN ./mvnw dependency:go-offline -B -q
+#29 DONE 150.4s
+
+#31 [linux/arm64 build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/carts-0.0.1-SNAPSHOT.jar /app.jar
+#31 ...
+
+#32 [linux/amd64 build-env 7/9] COPY ./src ./src
+#32 DONE 0.1s
+
+#33 [linux/amd64 build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/carts-0.0.1-SNAPSHOT.jar /app.jar
+#33 ...
+
+#31 [linux/arm64 build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/carts-0.0.1-SNAPSHOT.jar /app.jar
+#31 DONE 6.3s
+
+#33 [linux/amd64 build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/carts-0.0.1-SNAPSHOT.jar /app.jar
+#33 ...
+
+#34 [linux/arm64 stage-1 6/6] COPY --chown=appuser:appuser --from=build-env /app.jar .
+#34 DONE 0.1s
+
+#33 [linux/amd64 build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/carts-0.0.1-SNAPSHOT.jar /app.jar
+#33 DONE 15.4s
+
+#35 [linux/amd64 stage-1 6/6] COPY --chown=appuser:appuser --from=build-env /app.jar .
+#35 DONE 0.1s
+
+#36 exporting to image
+#36 exporting layers
+#36 exporting layers 6.7s done
+#36 exporting manifest sha256:5847d39451118d4d9f5b356a7c36bb740e737e9ee23c022c991649d56a671225 0.0s done
+#36 exporting config sha256:8e4abd145243cb978582e9df5651bba70e5eb23c9c196d34596d459f0d3cb839 done
+#36 exporting attestation manifest sha256:55469374101a5dcf331a0382e05cfeeb33af97c3b4271f86d125166e06f21d1b 0.0s done
+#36 exporting manifest sha256:6b0179b41ad52e7cf5eef323257d0f9dc862ba54cee8b0ed7433329074861548 done
+#36 exporting config sha256:9c2b687cd545b49c2603cffcb7517999f5b4c2dfd71f1e5a631c5fa2f8b541bc done
+#36 exporting attestation manifest sha256:4d7f2ea2eacb890a7416e3f777e950f54efe5746bf44845c478b20b992323fe6 done
+#36 exporting manifest list sha256:8c02599dd711c470e95f538e3284713635ae488ab5ee98670b70cb882453fd23 done
+#36 naming to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest done
+#36 ERROR: image "318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest": already exists
+
+#37 exporting to image
+#37 exporting manifest sha256:5847d39451118d4d9f5b356a7c36bb740e737e9ee23c022c991649d56a671225 done
+#37 exporting config sha256:8e4abd145243cb978582e9df5651bba70e5eb23c9c196d34596d459f0d3cb839 done
+#37 exporting attestation manifest sha256:55469374101a5dcf331a0382e05cfeeb33af97c3b4271f86d125166e06f21d1b done
+#37 exporting manifest sha256:6b0179b41ad52e7cf5eef323257d0f9dc862ba54cee8b0ed7433329074861548 done
+#37 exporting config sha256:9c2b687cd545b49c2603cffcb7517999f5b4c2dfd71f1e5a631c5fa2f8b541bc done
+#37 exporting attestation manifest sha256:4d7f2ea2eacb890a7416e3f777e950f54efe5746bf44845c478b20b992323fe6 0.0s done
+#37 exporting manifest list sha256:8c02599dd711c470e95f538e3284713635ae488ab5ee98670b70cb882453fd23 done
+#37 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest done
+#37 CANCELED
+------
+ > exporting to image:
+------
+
+ [33m1 warning found (use docker --debug to expand):
+[0m - FromAsCasing: 'as' and 'FROM' keywords' casing do not match (line 2)
+ERROR: failed to build: failed to solve: image "318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/cart:latest": already exists
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/envh9qk8klbxz72fim5q4lfda
+
+[36m>[39m [7m[1m[36m Removing temp folder /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-psWwOr [39m[22m[27m
+
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mbuildx failed with: View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/envh9qk8klbxz72fim5q4lfda[39m
+
+Pass --verbose to see the stacktrace.
+

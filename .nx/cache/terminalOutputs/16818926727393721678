@@ -1,0 +1,688 @@
+
+[36m>[39m [7m[1m[36m Docker info [39m[22m[27m
+
+[command]/usr/local/bin/docker version
+Client:
+ Version:           29.0.1
+ API version:       1.52
+ Go version:        go1.25.4
+ Git commit:        eedd969
+ Built:             Fri Nov 14 16:16:57 2025
+ OS/Arch:           darwin/arm64
+ Context:           desktop-linux
+
+Server: Docker Desktop 4.52.0 (210994)
+ Engine:
+  Version:          29.0.1
+  API version:      1.52 (minimum version 1.44)
+  Go version:       go1.25.4
+  Git commit:       198b5e3
+  Built:            Fri Nov 14 16:18:20 2025
+  OS/Arch:          linux/arm64
+  Experimental:     false
+ containerd:
+  Version:          v2.1.5
+  GitCommit:        fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc:
+  Version:          1.3.3
+  GitCommit:        v1.3.3-0-gd842d771
+ docker-init:
+  Version:          0.19.0
+  GitCommit:        de40ad0
+[command]/usr/local/bin/docker info
+Client:
+ Version:    29.0.1
+ Context:    desktop-linux
+ Debug Mode: false
+ Plugins:
+  ai: Docker AI Agent - Ask Gordon (Docker Inc.)
+    Version:  v1.9.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-ai
+  buildx: Docker Buildx (Docker Inc.)
+    Version:  v0.29.1-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-buildx
+  compose: Docker Compose (Docker Inc.)
+    Version:  v2.40.3-desktop.1
+    Path:     /Users/wealth/.docker/cli-plugins/docker-compose
+  debug: Get a shell into any image or container (Docker Inc.)
+    Version:  0.0.45
+    Path:     /Users/wealth/.docker/cli-plugins/docker-debug
+  desktop: Docker Desktop commands (Docker Inc.)
+    Version:  v0.2.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-desktop
+  extension: Manages Docker extensions (Docker Inc.)
+    Version:  v0.2.31
+    Path:     /Users/wealth/.docker/cli-plugins/docker-extension
+  init: Creates Docker-related starter files for your project (Docker Inc.)
+    Version:  v1.4.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-init
+  mcp: Docker MCP Plugin (Docker Inc.)
+    Version:  v0.28.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-mcp
+  model: Docker Model Runner (Docker Inc.)
+    Version:  v1.0.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-model
+  offload: Docker Offload (Docker Inc.)
+    Version:  v0.5.20
+    Path:     /Users/wealth/.docker/cli-plugins/docker-offload
+  pass: Docker Pass Secrets Manager Plugin (beta) (Docker Inc.)
+    Version:  v0.0.11
+    Path:     /Users/wealth/.docker/cli-plugins/docker-pass
+  sandbox: Docker Sandbox (Docker Inc.)
+    Version:  v0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sandbox
+  sbom: View the packaged-based Software Bill Of Materials (SBOM) for an image (Anchore Inc.)
+    Version:  0.6.0
+    Path:     /Users/wealth/.docker/cli-plugins/docker-sbom
+  scout: Docker Scout (Docker Inc.)
+    Version:  v1.18.3
+    Path:     /Users/wealth/.docker/cli-plugins/docker-scout
+
+Server:
+ Containers: 0
+  Running: 0
+  Paused: 0
+  Stopped: 0
+ Images: 21
+ Server Version: 29.0.1
+ Storage Driver: overlayfs
+  driver-type: io.containerd.snapshotter.v1
+ Logging Driver: json-file
+ Cgroup Driver: cgroupfs
+ Cgroup Version: 2
+ Plugins:
+  Volume: local
+  Network: bridge host ipvlan macvlan null overlay
+  Log: awslogs fluentd gcplogs gelf journald json-file local splunk syslog
+ CDI spec directories:
+  /etc/cdi
+  /var/run/cdi
+ Discovered Devices:
+  cdi: docker.com/gpu=webgpu
+ Swarm: inactive
+ Runtimes: io.containerd.runc.v2 runc
+ Default Runtime: runc
+ Init Binary: docker-init
+ containerd version: fcd43222d6b07379a4be9786bda52438f0dd16a1
+ runc version: v1.3.3-0-gd842d771
+ init version: de40ad0
+ Security Options:
+  seccomp
+   Profile: builtin
+  cgroupns
+ Kernel Version: 6.12.54-linuxkit
+ Operating System: Docker Desktop
+ OSType: linux
+ Architecture: aarch64
+ CPUs: 10
+ Total Memory: 7.653GiB
+ Name: docker-desktop
+ ID: 9749fbda-ff4d-4cbd-8ae1-270cf7536c9e
+ Docker Root Dir: /var/lib/docker
+ Debug Mode: false
+ HTTP Proxy: http.docker.internal:3128
+ HTTPS Proxy: http.docker.internal:3128
+ No Proxy: hubproxy.docker.internal
+ Labels:
+  com.docker.desktop.address=unix:///Users/wealth/Library/Containers/com.docker.docker/Data/docker-cli.sock
+ Experimental: false
+ Insecure Registries:
+  hubproxy.docker.internal:5555
+  ::1/128
+  127.0.0.0/8
+ Live Restore Enabled: false
+ Firewall Backend: iptables
+
+
+[36m>[39m [7m[1m[36m Buildx version [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx version
+github.com/docker/buildx v0.29.1-desktop.1 28f6246ff24e2c05095e8741e48c48dcb2d3b4bc
+
+[36m>[39m [7m[1m[36m Build [39m[22m[27m
+
+[command]/usr/local/bin/docker buildx build --file /Users/wealth/AWS_DEVOPS/retail-store-sample-app/src/checkout/Dockerfile --iidfile /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-OIAdGc/iidfile --platform linux/amd64,linux/arm64 --tag 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest --load --metadata-file /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-OIAdGc/metadata-file --push src/checkout
+#0 building with "desktop-linux" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.00kB done
+#1 DONE 0.0s
+
+#2 [linux/arm64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#2 ...
+
+#3 [auth] library/node:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [linux/amd64 internal] load metadata for docker.io/library/node:20-alpine
+#4 DONE 3.4s
+
+#5 [linux/amd64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#5 DONE 3.6s
+
+#6 [linux/arm64 internal] load metadata for docker.io/library/node:20-alpine
+#6 DONE 3.6s
+
+#2 [linux/arm64 internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023
+#2 DONE 3.6s
+
+#7 [internal] load .dockerignore
+#7 transferring context: 126B done
+#7 DONE 0.0s
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d 0.0s done
+#8 ...
+
+#9 [internal] load build context
+#9 transferring context: 1.99MB 0.1s done
+#9 DONE 0.1s
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 0B / 52.87MB 0.2s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 3.15MB / 52.87MB 1.1s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 6.29MB / 52.87MB 1.5s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 9.44MB / 52.87MB 2.0s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 12.58MB / 52.87MB 2.3s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 15.73MB / 52.87MB 2.7s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 18.87MB / 52.87MB 3.0s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 22.02MB / 52.87MB 3.3s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 25.17MB / 52.87MB 3.6s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 29.36MB / 52.87MB 4.1s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 32.51MB / 52.87MB 4.4s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 35.65MB / 52.87MB 4.7s
+#8 ...
+
+#10 [linux/amd64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#10 resolve docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463 done
+#10 sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 3.80MB / 3.80MB 0.9s done
+#10 sha256:d4cda882e05ad84150274412fb534631d499c5216411b3d162ebac40e824f048 446B / 446B 0.6s done
+#10 sha256:d31fb19c9d765a3839243f009b51eb48b4d9e104cebc2ec210a649d47c538bef 1.26MB / 1.26MB 1.2s done
+#10 sha256:537c6f956080bc5b44a38de0951224e37050aa22b362f4e54156e36e46c2e173 42.76MB / 42.76MB 4.9s done
+#10 extracting sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc32db163c98822e5dfa1b 0.1s done
+#10 DONE 5.0s
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 39.85MB / 52.87MB 5.1s
+#8 ...
+
+#10 [linux/amd64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#10 extracting sha256:537c6f956080bc5b44a38de0951224e37050aa22b362f4e54156e36e46c2e173 0.5s done
+#10 DONE 5.5s
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 44.04MB / 52.87MB 5.4s
+#8 ...
+
+#10 [linux/amd64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#10 extracting sha256:d31fb19c9d765a3839243f009b51eb48b4d9e104cebc2ec210a649d47c538bef 0.0s done
+#10 extracting sha256:d4cda882e05ad84150274412fb534631d499c5216411b3d162ebac40e824f048 done
+#10 DONE 5.6s
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 ...
+
+#11 [linux/amd64 build 2/6] WORKDIR /usr/src/app
+#11 DONE 0.1s
+
+#12 [linux/amd64 build 3/6] COPY --chown=node:node package*.json ./
+#12 DONE 0.0s
+
+#13 [linux/amd64 build 4/6] COPY --chown=node:node . .
+#13 DONE 0.0s
+
+#14 [linux/amd64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#14 resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d done
+#14 sha256:1c7de4eb5ced9ea3f72366a34ec955a53e9b0f4ac53d332a155de21eb808d732 53.97MB / 53.97MB 5.8s done
+#14 DONE 5.8s
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 47.19MB / 52.87MB 5.7s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 51.38MB / 52.87MB 6.0s
+#8 sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 52.87MB / 52.87MB 6.1s done
+#8 extracting sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a
+#8 ...
+
+#14 [linux/amd64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#14 extracting sha256:1c7de4eb5ced9ea3f72366a34ec955a53e9b0f4ac53d332a155de21eb808d732 0.8s done
+#14 DONE 6.6s
+
+#15 [linux/arm64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#15 resolve docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463 done
+#15 sha256:e46608ee62c2729e6a353f284359b4afa5a7227e99e7cb38dd31f9d7d5e957fe 444B / 444B 0.6s done
+#15 sha256:3af262c0271abf68f91cfeb1d1f27931dd262c1e9098f7542192d5f37035cefd 1.26MB / 1.26MB 0.7s done
+#15 sha256:9c8c30b783eee55196fb2c4fb2ecc3876f129de72d0d0bb3cf49afecc292fe97 34.60MB / 42.44MB 5.4s
+#15 sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39 4.14MB / 4.14MB 1.1s done
+#15 extracting sha256:6b59a28fa20117e6048ad0616b8d8c901877ef15ff4c7f18db04e4f01f43bc39 0.1s done
+#15 ...
+
+#8 [linux/arm64 build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d
+#8 extracting sha256:225766886c185e8ca1396d025509206d523cf484c336baa393b10b72bebdb69a 0.9s done
+#8 DONE 7.0s
+
+#16 [linux/amd64 build 5/6] RUN yarn install --frozen-lockfile
+#16 0.774 yarn install v1.22.22
+#16 0.866 [1/4] Resolving packages...
+#16 1.153 [2/4] Fetching packages...
+#16 ...
+
+#15 [linux/arm64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#15 sha256:9c8c30b783eee55196fb2c4fb2ecc3876f129de72d0d0bb3cf49afecc292fe97 42.44MB / 42.44MB 5.9s done
+#15 extracting sha256:9c8c30b783eee55196fb2c4fb2ecc3876f129de72d0d0bb3cf49afecc292fe97 0.5s done
+#15 DONE 7.6s
+
+#15 [linux/arm64 build 1/6] FROM docker.io/library/node:20-alpine@sha256:16858294071a56ffd4cce9f17b57136cc39e41507b40e245b4f8e906f7a19463
+#15 extracting sha256:3af262c0271abf68f91cfeb1d1f27931dd262c1e9098f7542192d5f37035cefd 0.0s done
+#15 extracting sha256:e46608ee62c2729e6a353f284359b4afa5a7227e99e7cb38dd31f9d7d5e957fe done
+#15 DONE 7.7s
+
+#17 [linux/arm64 build 2/6] WORKDIR /usr/src/app
+#17 DONE 0.2s
+
+#18 [linux/arm64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#18 ...
+
+#19 [linux/arm64 build 3/6] COPY --chown=node:node package*.json ./
+#19 DONE 0.0s
+
+#20 [linux/arm64 build 4/6] COPY --chown=node:node . .
+#20 DONE 0.0s
+
+#21 [linux/arm64 build 5/6] RUN yarn install --frozen-lockfile
+#21 0.222 yarn install v1.22.22
+#21 0.263 [1/4] Resolving packages...
+#21 0.405 [2/4] Fetching packages...
+#21 ...
+
+#22 [linux/amd64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#22 ...
+
+#21 [linux/arm64 build 5/6] RUN yarn install --frozen-lockfile
+#21 31.35 warning bare-fs@4.1.6: The engine "bare" appears to be invalid.
+#21 31.35 warning bare-os@3.6.1: The engine "bare" appears to be invalid.
+#21 31.36 [3/4] Linking dependencies...
+#21 31.36 warning " > @opentelemetry/auto-instrumentations-node@0.60.1" has unmet peer dependency "@opentelemetry/api@^1.4.1".
+#21 31.36 warning " > @opentelemetry/auto-instrumentations-node@0.60.1" has unmet peer dependency "@opentelemetry/core@^2.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-amqplib@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-aws-lambda@0.53.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-aws-sdk@0.54.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-bunyan@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-cassandra-driver@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-connect@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-cucumber@0.17.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-dataloader@0.19.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-dns@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-express@0.51.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-fastify@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-fs@0.22.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-generic-pool@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-graphql@0.50.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-hapi@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-ioredis@0.50.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-kafkajs@0.11.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-knex@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-koa@0.50.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-lru-memoizer@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-memcached@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mongodb@0.55.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mongoose@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mysql@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mysql2@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-nestjs-core@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-net@0.46.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-oracledb@0.28.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-pg@0.54.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-pino@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-redis@0.49.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-redis-4@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-restify@0.48.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-router@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-runtime-node@0.16.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-socket.io@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-tedious@0.21.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-undici@0.13.1" has unmet peer dependency "@opentelemetry/api@^1.7.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-winston@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-alibaba-cloud@0.31.2" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning " > @opentelemetry/resource-detector-aws@2.2.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-azure@0.9.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-container@0.7.2" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-gcp@0.36.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resources@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.3.0 <1.10.0".
+#21 31.36 warning " > @opentelemetry/sdk-node@0.202.0" has unmet peer dependency "@opentelemetry/api@>=1.3.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-amqplib > @opentelemetry/core@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-aws-sdk > @opentelemetry/propagation-utils@0.31.2" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mysql2 > @opentelemetry/sql-common@0.41.0" has unmet peer dependency "@opentelemetry/api@^1.1.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-proto@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-metrics-otlp-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-metrics-otlp-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-metrics-otlp-proto@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-prometheus@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-trace-otlp-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning " > @opentelemetry/exporter-trace-otlp-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-trace-otlp-proto@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-zipkin@2.0.1" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/propagator-b3@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/propagator-jaeger@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-logs@0.202.0" has unmet peer dependency "@opentelemetry/api@>=1.4.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-metrics@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.9.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/id-generator-aws-xray > @opentelemetry/sdk-trace-base@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.3.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-trace-node@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc > @opentelemetry/otlp-exporter-base@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc > @opentelemetry/otlp-grpc-exporter-base@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc > @opentelemetry/otlp-transformer@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#21 31.36 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-trace-node > @opentelemetry/context-async-hooks@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#21 31.36 warning " > @opentelemetry/id-generator-aws-xray@2.0.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#21 31.37 warning " > ts-loader@9.5.2" has unmet peer dependency "webpack@^5.0.0".
+#21 ...
+
+#16 [linux/amd64 build 5/6] RUN yarn install --frozen-lockfile
+#16 35.16 warning bare-fs@4.1.6: The engine "bare" appears to be invalid.
+#16 35.16 warning bare-os@3.6.1: The engine "bare" appears to be invalid.
+#16 35.16 [3/4] Linking dependencies...
+#16 35.16 warning " > @opentelemetry/auto-instrumentations-node@0.60.1" has unmet peer dependency "@opentelemetry/api@^1.4.1".
+#16 35.16 warning " > @opentelemetry/auto-instrumentations-node@0.60.1" has unmet peer dependency "@opentelemetry/core@^2.0.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-amqplib@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-aws-lambda@0.53.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-aws-sdk@0.54.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-bunyan@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-cassandra-driver@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-connect@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-cucumber@0.17.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-dataloader@0.19.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-dns@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-express@0.51.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-fastify@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-fs@0.22.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-generic-pool@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-graphql@0.50.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.16 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-hapi@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-ioredis@0.50.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-kafkajs@0.11.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-knex@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-koa@0.50.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-lru-memoizer@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-memcached@0.46.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mongodb@0.55.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mongoose@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mysql@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mysql2@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-nestjs-core@0.48.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-net@0.46.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-oracledb@0.28.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-pg@0.54.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-pino@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-redis@0.49.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-redis-4@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-restify@0.48.1" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-router@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-runtime-node@0.16.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-socket.io@0.49.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-tedious@0.21.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-undici@0.13.1" has unmet peer dependency "@opentelemetry/api@^1.7.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-winston@0.47.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-alibaba-cloud@0.31.2" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning " > @opentelemetry/resource-detector-aws@2.2.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-azure@0.9.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-container@0.7.2" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resource-detector-gcp@0.36.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/resources@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.3.0 <1.10.0".
+#16 35.17 warning " > @opentelemetry/sdk-node@0.202.0" has unmet peer dependency "@opentelemetry/api@>=1.3.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-amqplib > @opentelemetry/core@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-aws-sdk > @opentelemetry/propagation-utils@0.31.2" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/instrumentation-mysql2 > @opentelemetry/sql-common@0.41.0" has unmet peer dependency "@opentelemetry/api@^1.1.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-proto@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-metrics-otlp-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-metrics-otlp-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-metrics-otlp-proto@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-prometheus@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-trace-otlp-grpc@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning " > @opentelemetry/exporter-trace-otlp-http@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-trace-otlp-proto@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-zipkin@2.0.1" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/propagator-b3@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/propagator-jaeger@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-logs@0.202.0" has unmet peer dependency "@opentelemetry/api@>=1.4.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-metrics@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.9.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/id-generator-aws-xray > @opentelemetry/sdk-trace-base@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.3.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-trace-node@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc > @opentelemetry/otlp-exporter-base@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc > @opentelemetry/otlp-grpc-exporter-base@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/exporter-logs-otlp-grpc > @opentelemetry/otlp-transformer@0.202.0" has unmet peer dependency "@opentelemetry/api@^1.3.0".
+#16 35.17 warning "@opentelemetry/auto-instrumentations-node > @opentelemetry/sdk-node > @opentelemetry/sdk-trace-node > @opentelemetry/context-async-hooks@2.0.1" has unmet peer dependency "@opentelemetry/api@>=1.0.0 <1.10.0".
+#16 35.17 warning " > @opentelemetry/id-generator-aws-xray@2.0.0" has unmet peer dependency "@opentelemetry/api@^1.0.0".
+#16 35.17 warning " > ts-loader@9.5.2" has unmet peer dependency "webpack@^5.0.0".
+#16 ...
+
+#21 [linux/arm64 build 5/6] RUN yarn install --frozen-lockfile
+#21 38.01 [4/4] Building fresh packages...
+#21 38.90 warning Error running install script for optional dependency: "/usr/src/app/node_modules/cpu-features: Command failed.
+#21 38.90 Exit code: 1
+#21 38.90 Command: node buildcheck.js > buildcheck.gypi && node-gyp rebuild
+#21 38.90 Arguments: 
+#21 38.90 Directory: /usr/src/app/node_modules/cpu-features
+#21 38.90 Output:
+#21 38.90 /usr/src/app/node_modules/buildcheck/lib/index.js:115
+#21 38.90   throw new Error('Unable to detect compiler type');
+#21 38.90   ^
+#21 38.90 
+#21 38.90 Error: Unable to detect compiler type
+#21 38.90     at BuildEnvironment.getKind (/usr/src/app/node_modules/buildcheck/lib/index.js:115:9)
+#21 38.90     at BuildEnvironment.tryCompile (/usr/src/app/node_modules/buildcheck/lib/index.js:537:15)
+#21 38.90     at BuildEnvironment.checkHeader (/usr/src/app/node_modules/buildcheck/lib/index.js:423:25)
+#21 38.90     at Object.<anonymous> (/usr/src/app/node_modules/cpu-features/buildcheck.js:16:4)
+#21 38.90     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+#21 38.90     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+#21 38.90     at Module.load (node:internal/modules/cjs/loader:1266:32)
+#21 38.90     at Module._load (node:internal/modules/cjs/loader:1091:12)
+#21 38.90     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+#21 38.90     at node:internal/main/run_main_module:28:49
+#21 38.90 
+#21 38.90 Node.js v20.19.6"
+#21 38.90 info This module is OPTIONAL, you can safely ignore this error
+#21 41.94 Done in 41.72s.
+#21 DONE 42.9s
+
+#22 [linux/amd64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#22 ...
+
+#23 [linux/arm64 build 6/6] RUN yarn build
+#23 1.040 yarn run v1.22.22
+#23 1.068 $ rimraf dist
+#23 1.173 $ nest build
+#23 ...
+
+#16 [linux/amd64 build 5/6] RUN yarn install --frozen-lockfile
+#16 52.72 [4/4] Building fresh packages...
+#16 ...
+
+#18 [linux/arm64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#18 52.34 
+#18 52.34 Installed:
+#18 52.34   libbrotli-1.0.9-4.amzn2023.0.2.aarch64                                        
+#18 52.34   libsemanage-3.4-5.amzn2023.0.2.aarch64                                        
+#18 52.34   libuv-1:1.51.0-1.amzn2023.0.1.aarch64                                         
+#18 52.34   nodejs20-1:20.19.5-1.amzn2023.0.1.aarch64                                     
+#18 52.34   nodejs20-libs-1:20.19.5-1.amzn2023.0.1.aarch64                                
+#18 52.34   openssl-1:3.2.2-1.amzn2023.0.2.aarch64                                        
+#18 52.34   shadow-utils-2:4.9-12.amzn2023.0.4.aarch64                                    
+#18 52.34 
+#18 52.48 9 files removed
+#18 DONE 52.6s
+
+#24 [linux/arm64 stage-1 3/7] RUN alternatives --install /usr/bin/node node /usr/bin/node-20 90
+#24 DONE 1.0s
+
+#16 [linux/amd64 build 5/6] RUN yarn install --frozen-lockfile
+#16 54.61 warning Error running install script for optional dependency: "/usr/src/app/node_modules/cpu-features: Command failed.
+#16 54.61 Exit code: 1
+#16 54.61 Command: node buildcheck.js > buildcheck.gypi && node-gyp rebuild
+#16 54.61 Arguments: 
+#16 54.61 Directory: /usr/src/app/node_modules/cpu-features
+#16 54.61 Output:
+#16 54.61 /usr/src/app/node_modules/buildcheck/lib/index.js:115
+#16 54.61   throw new Error('Unable to detect compiler type');
+#16 54.61   ^
+#16 54.61 
+#16 54.61 Error: Unable to detect compiler type
+#16 54.61     at BuildEnvironment.getKind (/usr/src/app/node_modules/buildcheck/lib/index.js:115:9)
+#16 54.61     at BuildEnvironment.tryCompile (/usr/src/app/node_modules/buildcheck/lib/index.js:537:15)
+#16 54.61     at BuildEnvironment.checkHeader (/usr/src/app/node_modules/buildcheck/lib/index.js:423:25)
+#16 54.61     at Object.<anonymous> (/usr/src/app/node_modules/cpu-features/buildcheck.js:16:4)
+#16 54.61     at Module._compile (node:internal/modules/cjs/loader:1521:14)
+#16 54.61     at Module._extensions..js (node:internal/modules/cjs/loader:1623:10)
+#16 54.61     at Module.load (node:internal/modules/cjs/loader:1266:32)
+#16 54.61     at Module._load (node:internal/modules/cjs/loader:1091:12)
+#16 54.61     at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:12)
+#16 54.61     at node:internal/main/run_main_module:28:49
+#16 54.61 
+#16 54.61 Node.js v20.19.6"
+#16 54.61 info This module is OPTIONAL, you can safely ignore this error
+#16 ...
+
+#25 [linux/arm64 stage-1 4/7] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#25 DONE 0.2s
+
+#26 [linux/arm64 stage-1 5/7] WORKDIR /app
+#26 DONE 0.0s
+
+#22 [linux/amd64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#22 ...
+
+#16 [linux/amd64 build 5/6] RUN yarn install --frozen-lockfile
+#16 56.73 Done in 55.97s.
+#16 DONE 57.0s
+
+#23 [linux/arm64 build 6/6] RUN yarn build
+#23 ...
+
+#27 [linux/amd64 build 6/6] RUN yarn build
+#27 ...
+
+#23 [linux/arm64 build 6/6] RUN yarn build
+#23 12.90 Done in 11.87s.
+#23 DONE 13.0s
+
+#27 [linux/amd64 build 6/6] RUN yarn build
+#27 1.056 yarn run v1.22.22
+#27 1.110 $ rimraf dist
+#27 ...
+
+#22 [linux/amd64 stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     nodejs20     shadow-utils     &&     dnf clean all
+#22 57.31 
+#22 57.31 Installed:
+#22 57.31   libbrotli-1.0.9-4.amzn2023.0.2.x86_64                                         
+#22 57.31   libsemanage-3.4-5.amzn2023.0.2.x86_64                                         
+#22 57.31   libuv-1:1.51.0-1.amzn2023.0.1.x86_64                                          
+#22 57.31   nodejs20-1:20.19.5-1.amzn2023.0.1.x86_64                                      
+#22 57.31   nodejs20-libs-1:20.19.5-1.amzn2023.0.1.x86_64                                 
+#22 57.31   openssl-1:3.2.2-1.amzn2023.0.2.x86_64                                         
+#22 57.31   shadow-utils-2:4.9-12.amzn2023.0.4.x86_64                                     
+#22 57.31 
+#22 57.64 9 files removed
+#22 DONE 57.7s
+
+#27 [linux/amd64 build 6/6] RUN yarn build
+#27 1.572 $ nest build
+#27 ...
+
+#28 [linux/amd64 stage-1 3/7] RUN alternatives --install /usr/bin/node node /usr/bin/node-20 90
+#28 DONE 0.2s
+
+#29 [linux/amd64 stage-1 4/7] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"
+#29 DONE 0.2s
+
+#27 [linux/amd64 build 6/6] RUN yarn build
+#27 ...
+
+#30 [linux/amd64 stage-1 5/7] WORKDIR /app
+#30 DONE 0.0s
+
+#27 [linux/amd64 build 6/6] RUN yarn build
+#27 ...
+
+#31 [linux/arm64 stage-1 6/7] COPY --chown=node:node --from=build /usr/src/app/node_modules ./node_modules
+#31 DONE 3.3s
+
+#27 [linux/amd64 build 6/6] RUN yarn build
+#27 ...
+
+#32 [linux/arm64 stage-1 7/7] COPY --chown=node:node --from=build /usr/src/app/dist ./dist
+#32 DONE 0.2s
+
+#27 [linux/amd64 build 6/6] RUN yarn build
+#27 22.80 Done in 21.75s.
+#27 DONE 22.9s
+
+#33 [linux/amd64 stage-1 6/7] COPY --chown=node:node --from=build /usr/src/app/node_modules ./node_modules
+#33 DONE 2.9s
+
+#34 [linux/amd64 stage-1 7/7] COPY --chown=node:node --from=build /usr/src/app/dist ./dist
+#34 DONE 0.3s
+
+#35 exporting to image
+#35 exporting layers
+#35 ...
+
+#36 exporting to image
+#36 exporting layers 10.0s done
+#36 exporting manifest sha256:7c13ffff84ea73f0b7689572e90dfc999c2730f017b27ddc5248d8f552c72110 0.0s done
+#36 exporting config sha256:44cfcdd43536845badf532b27ed9ede43aef7dcf8a9924e4a49a99a5f4ee7bb2 done
+#36 exporting attestation manifest sha256:bb2f773318b1a3a330725576b92d1e1040f643b3eb0f93183a187e20844e6f6e done
+#36 exporting manifest sha256:e5ad3e8d1bd9211a5e29fbb17592fb814e2643222df1a2b3fa1a3f2abf5dda98 done
+#36 exporting config sha256:7ccb36e6f7d97e3fd9e64a99a8e0c7d05f2d98857ecd8c9561403dcd58879b2c done
+#36 exporting attestation manifest sha256:7dd1302a658d35ef22810e0530c658194d18e642f1a37582edda1029251160b3 done
+#36 exporting manifest list sha256:791fa74e26ebbba2564d611d7c2ccfc0b5fd1fe2a1693329f358e376fb05f9a6 done
+#36 naming to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest done
+#36 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest
+#36 ...
+
+#35 exporting to image
+#35 exporting manifest sha256:7c13ffff84ea73f0b7689572e90dfc999c2730f017b27ddc5248d8f552c72110 done
+#35 exporting config sha256:44cfcdd43536845badf532b27ed9ede43aef7dcf8a9924e4a49a99a5f4ee7bb2 done
+#35 exporting attestation manifest sha256:bb2f773318b1a3a330725576b92d1e1040f643b3eb0f93183a187e20844e6f6e done
+#35 exporting manifest sha256:e5ad3e8d1bd9211a5e29fbb17592fb814e2643222df1a2b3fa1a3f2abf5dda98 done
+#35 exporting config sha256:7ccb36e6f7d97e3fd9e64a99a8e0c7d05f2d98857ecd8c9561403dcd58879b2c done
+#35 exporting attestation manifest sha256:7dd1302a658d35ef22810e0530c658194d18e642f1a37582edda1029251160b3 done
+#35 exporting manifest list sha256:791fa74e26ebbba2564d611d7c2ccfc0b5fd1fe2a1693329f358e376fb05f9a6 done
+#35 naming to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest done
+#35 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest 5.2s done
+#35 ...
+
+#36 exporting to image
+#36 unpacking to 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest 5.2s done
+#36 DONE 15.4s
+
+#35 exporting to image
+#35 pushing layers
+#35 ...
+
+#37 [auth] sharing credentials for 318112817098.dkr.ecr.us-east-1.amazonaws.com
+#37 DONE 0.0s
+
+#35 exporting to image
+#35 pushing layers 1.8s done
+#35 ERROR: failed to push 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest: unknown: The repository with name 'retail-store/checkout' does not exist in the registry with id '318112817098'
+------
+ > exporting to image:
+------
+ERROR: failed to build: failed to solve: failed to push 318112817098.dkr.ecr.us-east-1.amazonaws.com/retail-store/checkout:latest: unknown: The repository with name 'retail-store/checkout' does not exist in the registry with id '318112817098'
+
+View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/4iemn4alvt8zfj1dgrb00961o
+
+[36m>[39m [7m[1m[36m Removing temp folder /var/folders/pd/3tk5g51j78jckc_9q3cg7h9c0000gn/T/docker-build-push-OIAdGc [39m[22m[27m
+
+
+[0m[7m[1m[31m NX [39m[22m[27m[0m  [31mbuildx failed with: View build details: docker-desktop://dashboard/build/desktop-linux/desktop-linux/4iemn4alvt8zfj1dgrb00961o[39m
+
+Pass --verbose to see the stacktrace.
+
