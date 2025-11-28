@@ -1,0 +1,38 @@
+[2m> [22mdocker compose down
+
+[1A[1B[0G[?25l[+] Running 0/1
+ [33m⠋[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.3s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠸[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.4s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠼[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.5s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠴[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.6s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠦[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.7s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠧[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.8s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠇[0m Container ui-ui-1  Stopping                                                                                                                              [34m0.9s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠏[0m Container ui-ui-1  Stopping                                                                                                                              [34m1.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠋[0m Container ui-ui-1  Stopping                                                                                                                              [34m1.1s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠙[0m Container ui-ui-1  Stopping                                                                                                                              [34m1.2s [0m
+[?25h[1A[1A[0G[?25l[+] Running 0/1
+ [33m⠹[0m Container ui-ui-1  Stopping                                                                                                                              [34m1.3s [0m
+[?25h[1A[1A[0G[?25l[34m[+] Running 1/2[0m
+ [32m✔[0m Container ui-ui-1   [32mRemoved[0m                                                                                                                              [34m1.3s [0m
+ [33m⠋[0m Network ui_default  Removing                                                                                                                             [34m0.0s [0m
+[?25h[1A[1A[1A[0G[?25l[+] Running 1/2
+ [32m✔[0m Container ui-ui-1   [32mRemoved[0m                                                                                                                              [34m1.3s [0m
+ [33m⠙[0m Network ui_default  Removing                                                                                                                             [34m0.1s [0m
+[?25h[1A[1A[1A[0G[?25l[34m[+] Running 2/2[0m
+ [32m✔[0m Container ui-ui-1   [32mRemoved[0m                                                                                                                              [34m1.3s [0m
+ [32m✔[0m Network ui_default  [32mRemoved[0m                                                                                                                              [34m0.2s [0m
+[?25h

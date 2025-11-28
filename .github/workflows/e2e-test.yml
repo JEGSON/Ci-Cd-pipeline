@@ -1,4 +1,4 @@
-name: E2E Test
+name: Unified E2E Tests
 
 on:
   push:
@@ -11,95 +11,103 @@ on:
 
 permissions: {}
 
+env:
+  IMAGE_TAG: e2e
+  KIND_CLUSTER: kind
+  AWS_ACCOUNT_ID: 318112817098
+  AWS_REGION: us-east-1
+
 jobs:
-  docker:
-    name: Docker E2E Tests
+  e2e:
+    name: Docker + Kubernetes E2E
     runs-on: ubuntu-latest
+    services:
+      docker:
+        image: docker:20.10.24-dind
+        options: --privileged
+
     steps:
-      - uses: actions/checkout@v4
-      - name: "Setup Env"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup environment
         uses: ./.github/actions/setup-env
-      - name: Compose up
-        shell: devenv shell bash -- -e {0}
+
+      ############################
+      # Docker Compose E2E Tests #
+      ############################
+      - name: Docker Compose Up (UI only)
         run: |
           yarn nx compose:up ui
           sleep 60
-      - name: Test
-        shell: devenv shell bash -- -e {0}
+
+      - name: Docker Compose E2E Tests
         run: |
           CYPRESS_BASE_URL='http://localhost:8888' yarn nx execute e2e
-      - name: Compose down
-        shell: devenv shell bash -- -e {0}
+
+      - name: Docker Compose Down
         run: |
           yarn nx compose:down ui
 
-  docker-multi:
-    name: Docker E2E Tests (Multi)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: "Setup Env"
-        uses: ./.github/actions/setup-env
-      - name: Compose up
-        shell: devenv shell bash -- -e {0}
+      ############################
+      # Docker Compose Multi E2E #
+      ############################
+      - name: Docker Compose Up (All Services)
         run: |
           DB_PASSWORD='test123' yarn nx compose:up
           sleep 60
-      - name: Test
-        shell: devenv shell bash -- -e {0}
+
+      - name: Docker Compose Multi E2E Tests
         run: |
           CYPRESS_BASE_URL='http://localhost:8888' yarn nx execute e2e
-      - name: Load Generator
-        shell: devenv shell bash -- -e {0}
+
+      - name: Load Generator Test
         run: |
           cd src/load-generator
           bash scripts/run-test.sh
-      - name: Compose down
-        shell: devenv shell bash -- -e {0}
+
+      - name: Docker Compose Down (All Services)
         run: |
           DB_PASSWORD='test123' yarn nx compose:down
 
-  kubernetes:
-    name: Kubernetes E2E Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: "Setup Env"
-        uses: ./.github/actions/setup-env
-
-      - name: Build Docker images
+      ############################
+      # Kubernetes E2E Tests     #
+      ############################
+      - name: Build Docker images for KinD
         run: |
           SERVICES=(catalog ui cart orders checkout)
           for SERVICE in "${SERVICES[@]}"; do
             echo "🔹 Building $SERVICE..."
-            yarn nx run $SERVICE:container --tags public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:e2e
+            docker build -t public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG ./src/$SERVICE
           done
 
-      - name: Setup KinD cluster
+      - name: Set up KinD cluster
         uses: helm/kind-action@v1.12.0
         with:
-          cluster_name: kind
+          cluster_name: ${{ env.KIND_CLUSTER }}
           version: v0.17.0
+          kubectl_version: v1.31.4
 
       - name: Load Docker images into KinD
         run: |
           SERVICES=(catalog ui cart orders checkout)
           for SERVICE in "${SERVICES[@]}"; do
-            kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:e2e --name kind
+            echo "🚀 Loading $SERVICE into KinD..."
+            kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG --name $KIND_CLUSTER
           done
 
       - name: Deploy with Helmfile
         shell: bash
         env:
-          IMAGE_TAG: e2e
+          IMAGE_TAG: ${{ env.IMAGE_TAG }}
         run: |
           NODE_PORT=30000 helmfile apply -f src/app/helmfile.yaml --wait --skip-diff-on-install
           kubectl wait --for=condition=Ready pod -l app.kubernetes.io/owner=retail-store-sample --timeout=180s || exit_code=$?
 
-      - name: Run E2E tests
+      - name: Kubernetes E2E Tests
         shell: bash
         run: |
           bash scripts/e2e-kind.sh
 
-      - name: Cleanup Docker
+      - name: Cleanup Docker system
         run: docker system prune --all --force

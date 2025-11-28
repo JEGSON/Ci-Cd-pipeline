@@ -1,0 +1,6 @@
+[2m> [22mcd src/e2e && yarn install
+
+[2K[1G[33mwarning[39m package.json: No license field
+[2K[1G[33mwarning[39m e2e@1.0.0: No license field
+[2K[1G[2m[1/4][22m Resolving packages...
+[2K[1G[32msuccess[39m Already up-to-date.

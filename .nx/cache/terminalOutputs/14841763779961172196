@@ -1,0 +1,597 @@
+[2m> [22mdocker compose up --build --detach --wait
+
+[1A[1B[0G[?25l[+] Building 0.0s (0/1)                                                                                                                                          
+ => [internal] load local bake definitions                                                                                                                  0.0s
+[?25h[1A[1A[0G[?25l[+] Building 0.1s (1/2)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[?25h[1A[1A[1A[0G[?25l[+] Building 0.3s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                0.2s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.5s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                0.3s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.6s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                0.5s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.8s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                0.6s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 0.9s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                0.8s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.1s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                0.9s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.2s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                1.1s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.4s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                1.2s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.5s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                1.4s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.7s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                1.5s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 1.8s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                1.7s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.0s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                1.8s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.1s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                2.0s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.3s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                2.1s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.4s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                2.3s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.6s (2/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                2.4s
+[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.6s (3/3)                                                                                                                                          
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m[34m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                2.4s
+[0m[?25h[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.7s (20/20)                                                                                                                                        
+[34m => CACHED [build-env 4/9] COPY mvnw .                                                                                                                      0.0s
+[0m[34m => CACHED [build-env 5/9] COPY pom.xml .                                                                                                                   0.0s
+[0m[34m => CACHED [build-env 6/9] RUN ./mvnw dependency:go-offline -B -q                                                                                           0.0s
+[0m[34m => CACHED [build-env 7/9] COPY ./src ./src                                                                                                                 0.0s
+[0m[34m => CACHED [build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/ui-0.0.1-SNAPSHOT.jar /app.jar                                               0.0s
+[0m[34m => CACHED [stage-1 7/7] COPY --chown=appuser:appuser --from=build-env /app.jar .                                                                           0.0s
+[0m[34m => exporting to image                                                                                                                                      0.1s
+[0m[34m => => exporting layers                                                                                                                                     0.0s
+[0m[34m => => exporting manifest sha256:3bd7dba0e4686c22cefabebde680bb32e09687016f3100da6c103530820e372b                                                           0.0s
+[0m[34m => => exporting config sha256:d0c70ebe761434d4f34946bbd17824f843cda5ee98fff1a2bf6279822f8c954b                                                             0.0s
+[0m[34m => => exporting attestation manifest sha256:4447ad23a72437702ad02f98d000c05f00c379c14b108e60e7863e4ebcdf75bc                                               0.0s
+[0m[34m => => exporting manifest list sha256:caeb4348ac0d59d7ddbc45c81e3a1a50d1300522bedd996dcf06fe7bda7d0b18                                                      0.0s
+[0m[34m => => naming to docker.io/library/ui-ui:latest                                                                                                             0.0s
+[0m[34m => => unpacking to docker.io/library/ui-ui:latest                                                                                                          0.0s
+[0m[?25h[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[1A[0G[?25l[+] Building 2.8s (21/21) FINISHED                                                                                                                               
+[34m => [internal] load local bake definitions                                                                                                                  0.0s
+[0m[34m => => reading from stdin 537B                                                                                                                              0.0s
+[0m[34m => [internal] load build definition from Dockerfile                                                                                                        0.0s
+[0m[34m => => transferring dockerfile: 1.63kB                                                                                                                      0.0s
+[0m[34m => [internal] load metadata for public.ecr.aws/amazonlinux/amazonlinux:2023                                                                                2.4s
+[0m[34m => [internal] load .dockerignore                                                                                                                           0.0s
+[0m[34m => => transferring context: 121B                                                                                                                           0.0s
+[0m[34m => [build-env 1/9] FROM public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d                0.0s
+[0m[34m => => resolve public.ecr.aws/amazonlinux/amazonlinux:2023@sha256:f5ca6cafc706233c641ad838e738047389943afd3585cb1df7eedfc4d9b1799d                          0.0s
+[0m[34m => [internal] load build context                                                                                                                           0.0s
+[0m[34m => => transferring context: 19.65kB                                                                                                                        0.0s
+[0m[34m => CACHED [stage-1 2/7] RUN dnf --setopt=install_weak_deps=False install -q -y     java-21-amazon-corretto-headless     shadow-utils     &&     dnf clean  0.0s
+[0m[34m => CACHED [stage-1 3/7] RUN dnf -q -y swap libcurl-minimal libcurl-full     && dnf -q -y swap curl-minimal curl-full                                       0.0s
+[0m[34m => CACHED [stage-1 4/7] RUN useradd     --home "/app"     --create-home     --user-group     --uid "1000"     "appuser"                                    0.0s
+[0m[34m => CACHED [stage-1 5/7] WORKDIR /app                                                                                                                       0.0s
+[0m[34m => CACHED [stage-1 6/7] COPY ./ATTRIBUTION.md ./LICENSES.md                                                                                                0.0s
+[0m[34m => CACHED [build-env 2/9] RUN dnf --setopt=install_weak_deps=False install -q -y     maven     java-21-amazon-corretto-headless     which     tar     gzi  0.0s
+[0m[34m => CACHED [build-env 3/9] COPY .mvn .mvn                                                                                                                   0.0s
+[0m[34m => CACHED [build-env 4/9] COPY mvnw .                                                                                                                      0.0s
+[0m[34m => CACHED [build-env 5/9] COPY pom.xml .                                                                                                                   0.0s
+[0m[34m => CACHED [build-env 6/9] RUN ./mvnw dependency:go-offline -B -q                                                                                           0.0s
+[0m[34m => CACHED [build-env 7/9] COPY ./src ./src                                                                                                                 0.0s
+[0m[34m => CACHED [build-env 8/9] RUN ./mvnw -DskipTests package -q &&     mv /target/ui-0.0.1-SNAPSHOT.jar /app.jar                                               0.0s
+[0m[34m => CACHED [stage-1 7/7] COPY --chown=appuser:appuser --from=build-env /app.jar .                                                                           0.0s
+[0m[34m => exporting to image                                                                                                                                      0.1s
+[0m[34m => => exporting layers                                                                                                                                     0.0s
+[0m[34m => => exporting manifest sha256:3bd7dba0e4686c22cefabebde680bb32e09687016f3100da6c103530820e372b                                                           0.0s
+[0m[34m => => exporting config sha256:d0c70ebe761434d4f34946bbd17824f843cda5ee98fff1a2bf6279822f8c954b                                                             0.0s
+[0m[34m => => exporting attestation manifest sha256:4447ad23a72437702ad02f98d000c05f00c379c14b108e60e7863e4ebcdf75bc                                               0.0s
+[0m[34m => => exporting manifest list sha256:caeb4348ac0d59d7ddbc45c81e3a1a50d1300522bedd996dcf06fe7bda7d0b18                                                      0.0s
+[0m[34m => => naming to docker.io/library/ui-ui:latest                                                                                                             0.0s
+[0m[34m => => unpacking to docker.io/library/ui-ui:latest                                                                                                          0.0s
+[0m[34m => resolving provenance for metadata file                                                                                                                  0.0s
+[0m[?25h[1A[1B[0G[?25l[+] Running 1/1
+ [32m✔[0m ui-ui  [32mBuilt[0m                                                                                                                                             [34m0.0s [0m
+[?25h[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Creating                                                                                                                             [34m0.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Starting                                                                                                                             [34m0.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Starting                                                                                                                             [34m0.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m0.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m0.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m0.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m0.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m0.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m0.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m1.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m2.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m3.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m4.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m5.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m6.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m7.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m8.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠇[0m Container ui-ui-1   Waiting                                                                                                                              [34m9.9s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠏[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.0s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠋[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.1s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠙[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.2s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠹[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.3s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠸[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.4s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠼[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.5s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠴[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.6s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠦[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.7s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[+] Running 2/3
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [33m⠧[0m Container ui-ui-1   Waiting                                                                                                                             [34m10.8s [0m
+[?25h[1A[1A[1A[1A[0G[?25l[34m[+] Running 3/3[0m
+ [32m✔[0m ui-ui               [32mBuilt[0m                                                                                                                                [34m0.0s [0m
+ [32m✔[0m Network ui_default  [32mCreated[0m                                                                                                                              [34m0.0s [0m
+ [32m✔[0m Container ui-ui-1   [32mHealthy[0m                                                                                                                             [34m10.8s [0m
+[?25h

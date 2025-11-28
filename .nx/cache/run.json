@@ -1,62 +1,29 @@
 {
   "run": {
-    "command": "nx run-many -t container --projects=ui,catalog,cart,orders,checkout --configuration publish",
-    "startTime": "2025-11-27T20:44:37.965Z",
-    "endTime": "2025-11-27T21:08:54.452Z",
+    "command": "nx execute e2e",
+    "startTime": "2025-11-28T18:23:21.387Z",
+    "endTime": "2025-11-28T18:23:38.192Z",
     "inner": false
   },
   "tasks": [
     {
-      "taskId": "cart:container:publish",
-      "target": "container",
-      "projectName": "cart",
-      "hash": "7987772422707577134",
-      "startTime": "2025-11-27T20:44:37.998Z",
-      "endTime": "2025-11-27T20:56:16.881Z",
+      "taskId": "e2e:install",
+      "target": "install",
+      "projectName": "e2e",
+      "hash": "9353373578918716547",
+      "startTime": "2025-11-28T18:23:21.416Z",
+      "endTime": "2025-11-28T18:23:21.845Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0
     },
     {
-      "taskId": "orders:container:publish",
-      "target": "container",
-      "projectName": "orders",
-      "hash": "12894103782538315000",
-      "startTime": "2025-11-27T20:44:37.998Z",
-      "endTime": "2025-11-27T21:01:30.075Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "ui:container:publish",
-      "target": "container",
-      "projectName": "ui",
-      "hash": "298242403737239846",
-      "startTime": "2025-11-27T20:44:37.998Z",
-      "endTime": "2025-11-27T21:03:28.987Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "catalog:container:publish",
-      "target": "container",
-      "projectName": "catalog",
-      "hash": "15108235973971551999",
-      "startTime": "2025-11-27T20:56:16.899Z",
-      "endTime": "2025-11-27T21:04:15.101Z",
-      "params": "",
-      "cacheStatus": "cache-miss",
-      "status": 0
-    },
-    {
-      "taskId": "checkout:container:publish",
-      "target": "container",
-      "projectName": "checkout",
-      "hash": "6664650182097955507",
-      "startTime": "2025-11-27T21:01:30.079Z",
-      "endTime": "2025-11-27T21:08:54.448Z",
+      "taskId": "e2e:execute",
+      "target": "execute",
+      "projectName": "e2e",
+      "hash": "4053802828869157139",
+      "startTime": "2025-11-28T18:23:21.846Z",
+      "endTime": "2025-11-28T18:23:38.188Z",
       "params": "",
       "cacheStatus": "cache-miss",
       "status": 0

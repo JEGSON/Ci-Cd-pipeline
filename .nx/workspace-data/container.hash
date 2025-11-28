@@ -229,5 +229,38 @@
         }
       }
     }
+  },
+  "11088793804170863437": {
+    "container": {
+      "executor": "@nx-tools/nx-container:build",
+      "dependsOn": [
+        "build"
+      ],
+      "options": {
+        "engine": "docker",
+        "tags": [
+          "docker.io/checkout:dev"
+        ],
+        "load": true
+      },
+      "configurations": {
+        "ci": {
+          "load": false,
+          "push": true,
+          "metadata": {
+            "images": [
+              "docker.io/checkout"
+            ],
+            "tags": [
+              "type=schedule",
+              "type=ref,event=branch",
+              "type=ref,event=tag",
+              "type=ref,event=pr",
+              "type=sha,prefix=sha-"
+            ]
+          }
+        }
+      }
+    }
   }
 }
