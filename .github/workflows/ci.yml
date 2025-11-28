@@ -15,7 +15,7 @@ env:
   KIND_CLUSTER: kind
 
 jobs:
-  build-and-test:
+  kubernetes-e2e:
     runs-on: ubuntu-latest
     services:
       docker:
@@ -42,18 +42,12 @@ jobs:
             kind create cluster --name "$KIND_CLUSTER"
           fi
 
-      - name: Build Docker images
+      - name: Build and load Docker images into KinD
         run: |
           SERVICES=(catalog ui cart orders checkout)
           for SERVICE in "${SERVICES[@]}"; do
             echo "🔹 Building $SERVICE..."
             docker build -t public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG ./src/$SERVICE
-          done
-
-      - name: Load images into KinD
-        run: |
-          SERVICES=(catalog ui cart orders checkout)
-          for SERVICE in "${SERVICES[@]}"; do
             echo "🚀 Loading $SERVICE into KinD..."
             kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG --name "$KIND_CLUSTER"
           done
@@ -75,11 +69,11 @@ jobs:
             docker push $ECR_IMAGE
           done
 
-      - name: Run Java tests (orders)
+      - name: Run Java tests safely
         run: |
           cd src/orders
           if docker info > /dev/null 2>&1; then
-            echo "Docker is available, running full tests..."
+            echo "Docker available, running full tests..."
             ./mvnw clean test
           else
             echo "Docker not available, skipping integration tests..."
