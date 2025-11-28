@@ -1,4 +1,4 @@
-name: E2E Test
+name: Kubernetes E2E Tests
 
 on:
   push:
@@ -12,97 +12,64 @@ on:
 permissions: {}
 
 jobs:
-  docker:
-    name: Docker E2E Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: "Setup Env"
-        uses: ./.github/actions/setup-env
-      - name: Compose up
-        shell: devenv shell bash -- -e {0}
-        run: |
-          yarn nx compose:up ui
-          sleep 60
-      - name: Test
-        shell: devenv shell bash -- -e {0}
-        run: |
-          CYPRESS_BASE_URL='http://localhost:8888' yarn nx execute e2e
-      - name: Compose down
-        shell: devenv shell bash -- -e {0}
-        run: |
-          yarn nx compose:down ui
-
-  docker-multi:
-    name: Docker E2E Tests (Multi)
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: "Setup Env"
-        uses: ./.github/actions/setup-env
-      - name: Compose up
-        shell: devenv shell bash -- -e {0}
-        run: |
-          DB_PASSWORD='test123' yarn nx compose:up
-          sleep 60
-      - name: Test
-        shell: devenv shell bash -- -e {0}
-        run: |
-          CYPRESS_BASE_URL='http://localhost:8888' yarn nx execute e2e
-      - name: Load Generator
-        shell: devenv shell bash -- -e {0}
-        run: |
-          cd src/load-generator
-          bash scripts/run-test.sh
-      - name: Compose down
-        shell: devenv shell bash -- -e {0}
-        run: |
-          DB_PASSWORD='test123' yarn nx compose:down
-
-  kubernetes:
+  kubernetes-e2e:
     name: Kubernetes E2E Tests
     runs-on: ubuntu-latest
+    services:
+      docker:
+        image: docker:20.10.24-dind
+        options: --privileged
+
+    env:
+      IMAGE_TAG: e2e
+      KIND_CLUSTER: kind
+
     steps:
-      - uses: actions/checkout@v4
-      - name: "Setup Env"
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup environment
         uses: ./.github/actions/setup-env
 
-      - name: Build images
-        shell: devenv shell bash -- -e {0}
-        run: |
-          yarn nx run-many -t build --projects=tag:service --parallel=1
-
-          yarn nx run-many -t container --projects=tag:service \
-            --tags public.ecr.aws/aws-containers/retail-store-sample-{projectName}:e2e --parallel=5
-
-      - name: Kind cluster
+      - name: Set up KinD
         uses: helm/kind-action@v1.12.0
         with:
-          cluster_name: kind
+          cluster_name: ${{ env.KIND_CLUSTER }}
           version: v0.17.0
 
-      - name: Load images
-        env:
-          IMAGE_TAG: e2e
+      - name: Build Docker images in parallel
         run: |
-          kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-catalog:$IMAGE_TAG
-          kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-cart:$IMAGE_TAG
-          kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-checkout:$IMAGE_TAG
-          kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-orders:$IMAGE_TAG
-          kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-ui:$IMAGE_TAG
+          SERVICES=(catalog ui cart orders checkout)
+          for SERVICE in "${SERVICES[@]}"; do
+            (
+              echo "🔹 Building $SERVICE..."
+              yarn nx run $SERVICE:container \
+                --tags public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:${IMAGE_TAG}
+            ) &
+          done
+          wait
+          echo "✅ All images built successfully."
 
-          docker system prune --all --force
+      - name: Load Docker images into KinD
+        run: |
+          SERVICES=(catalog ui cart orders checkout)
+          for SERVICE in "${SERVICES[@]}"; do
+            echo "🚀 Loading $SERVICE into KinD..."
+            kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:${IMAGE_TAG} --name $KIND_CLUSTER
+          done
 
-      - name: Deploy
-        shell: devenv shell bash -- -e {0}
+      - name: Deploy with Helmfile
+        shell: bash
         env:
-          IMAGE_TAG: e2e
+          IMAGE_TAG: ${{ env.IMAGE_TAG }}
         run: |
           NODE_PORT=30000 helmfile apply -f src/app/helmfile.yaml --wait --skip-diff-on-install
+          kubectl wait --for=condition=Ready pod -l app.kubernetes.io/owner=retail-store-sample --timeout=180s || exit_code=$?
 
-          kubectl wait --for=condition=Ready pod -l app.kubernetes.io/owner=retail-store-sample --timeout 180s || exit_code=$?
-
-      - name: Test
-        shell: devenv shell bash -- -e {0}
+      - name: Run E2E tests
+        shell: bash
         run: |
           bash scripts/e2e-kind.sh
+
+      - name: Cleanup Docker
+        run: docker system prune --all --force
