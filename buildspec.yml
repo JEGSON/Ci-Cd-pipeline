@@ -1,0 +1,59 @@
+version: 0.2
+
+env:
+  variables:
+    AWS_ACCOUNT_ID: "318112817098"
+    AWS_DEFAULT_REGION: "us-east-1"
+    SERVICES: "ui catalog cart orders catalog checkout"
+
+phases:
+  pre_build:
+    commands:
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
+      - echo Build started at `date`
+      - COMMIT_HASH=$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | cut -c 1-7)
+      - IMAGE_TAG=${COMMIT_HASH:=latest}
+
+  build:
+    commands:
+      - echo Building images for all microservices...
+      - |
+        for SERVICE in ui catalog cart orders checkout; do
+          echo "-------------------------------"
+          echo "Building service: $SERVICE"
+          echo "-------------------------------"
+          
+          REPOSITORY_URI="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/retail-store/$SERVICE"
+
+          docker build -t $REPOSITORY_URI:latest ./src/$SERVICE
+          docker tag $REPOSITORY_URI:latest $REPOSITORY_URI:$IMAGE_TAG
+        done
+
+  post_build:
+    commands:
+      - echo Pushing all images to ECR...
+      - |
+        for SERVICE in ui catalog cart orders checkout; do
+          REPOSITORY_URI="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/retail-store/$SERVICE"
+          
+          echo "Pushing: $SERVICE"
+          docker push $REPOSITORY_URI:latest
+          docker push $REPOSITORY_URI:$IMAGE_TAG
+        done
+      
+      - echo Writing image definitions...
+      - |
+        printf '[' > imagedefinitions.json
+        for SERVICE in ui catalog cart orders checkout; do
+          REPOSITORY_URI="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/retail-store/$SERVICE"
+          printf '{"name":"%s","imageUri":"%s"},' "$SERVICE" "$REPOSITORY_URI:$IMAGE_TAG" >> imagedefinitions.json
+        done
+        sed -i 's/,$//' imagedefinitions.json
+        printf ']' >> imagedefinitions.json
+      
+      - cat imagedefinitions.json
+
+artifacts:
+  files:
+    - imagedefinitions.json
