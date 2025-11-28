@@ -15,7 +15,7 @@ env:
   KIND_CLUSTER: kind
 
 jobs:
-  kubernetes-e2e:
+  build-and-deploy:
     runs-on: ubuntu-latest
     services:
       docker:
@@ -25,7 +25,7 @@ jobs:
           - 2375:2375
 
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Set up Docker Buildx
@@ -36,7 +36,7 @@ jobs:
         with:
           version: v1.29.0
 
-      - name: Create KinD cluster if missing
+      - name: Create KinD cluster
         run: |
           if ! kind get clusters | grep -q "$KIND_CLUSTER"; then
             kind create cluster --name "$KIND_CLUSTER"
@@ -59,7 +59,7 @@ jobs:
         run: |
           aws ecr get-login-password --region "$AWS_REGION" | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
 
-      - name: Push images to ECR
+      - name: Push Docker images to ECR
         run: |
           SERVICES=(catalog ui cart orders checkout)
           for SERVICE in "${SERVICES[@]}"; do
