@@ -197,8 +197,8 @@
           "hash": "16458098829721183985"
         },
         {
-          "file": ".github/workflows/ci.yml",
-          "hash": "15162207459201030264"
+          "file": ".github/workflows/e2e-test.yml",
+          "hash": "13203638295307498085"
         },
         {
           "file": ".github/workflows/oss.yml",
