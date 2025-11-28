@@ -1,0 +1,109 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+env:
+  IMAGE_TAG: e2e
+  AWS_ACCOUNT_ID: 318112817098
+  AWS_REGION: us-east-1
+  KIND_CLUSTER: retail-store
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    services:
+      docker:
+        image: docker:20.10.24-dind
+        options: --privileged
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Log in to AWS ECR
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        run: |
+          aws ecr get-login-password --region "$AWS_REGION" | docker login --username AWS --password-stdin "$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com"
+
+      - name: Build multi-platform Docker images
+        run: |
+          SERVICES=(catalog ui cart orders checkout)
+          for SERVICE in "${SERVICES[@]}"; do
+            echo "🔹 Building $SERVICE for amd64 and arm64..."
+            docker buildx build \
+              --platform linux/amd64,linux/arm64 \
+              -t public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG \
+              ./src/$SERVICE \
+              --load
+          done
+
+      - name: Push Docker images to ECR
+        run: |
+          SERVICES=(catalog ui cart orders checkout)
+          for SERVICE in "${SERVICES[@]}"; do
+            ECR_IMAGE="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/retail-store/$SERVICE:$IMAGE_TAG"
+            docker tag public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG $ECR_IMAGE
+            echo "🚀 Pushing $SERVICE to ECR..."
+            docker push $ECR_IMAGE
+          done
+
+      - name: Set up KinD cluster
+        uses: helm/kind-action@v1.12.0
+        with:
+          cluster_name: ${{ env.KIND_CLUSTER }}
+          version: v0.17.0
+
+      - name: Load Docker images into KinD
+        run: |
+          SERVICES=(catalog ui cart orders checkout)
+          for SERVICE in "${SERVICES[@]}"; do
+            echo "🚀 Loading $SERVICE into KinD..."
+            kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG --name $KIND_CLUSTER
+          done
+
+      - name: Deploy to KinD with Helmfile
+        shell: bash
+        env:
+          IMAGE_TAG: ${{ env.IMAGE_TAG }}
+        run: |
+          NODE_PORT=30000 helmfile apply -f src/app/helmfile.yaml --wait --skip-diff-on-install
+          kubectl wait --for=condition=Ready pod -l app.kubernetes.io/owner=retail-store-sample --timeout=180s || exit_code=$?
+
+      - name: Run Cypress E2E tests
+        shell: bash
+        run: |
+          echo "🔹 Forwarding UI service port..."
+          kubectl port-forward svc/ui 30000:80 &
+          PORT_FORWARD_PID=$!
+          sleep 10
+          
+          export CYPRESS_BASE_URL=http://localhost:30000
+          echo "🔹 Running Cypress E2E tests..."
+          bash scripts/e2e-kind.sh
+          
+          echo "🔹 Stopping port-forward..."
+          kill $PORT_FORWARD_PID
+
+      - name: Run Java tests safely
+        run: |
+          cd src/orders
+          if docker info > /dev/null 2>&1; then
+            echo "Docker available, running full tests..."
+            ./mvnw clean test
+          else
+            echo "Docker not available, skipping integration tests..."
+            ./mvnw clean package -DskipTests
+
+      - name: Cleanup Docker system
+        run: docker system prune --all --force
