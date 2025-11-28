@@ -12,7 +12,7 @@ env:
   IMAGE_TAG: e2e
   AWS_ACCOUNT_ID: 318112817098
   AWS_REGION: us-east-1
-  KIND_CLUSTER: retail-store
+  KIND_CLUSTER: kind
 
 jobs:
   build-and-test:
@@ -42,19 +42,21 @@ jobs:
             kind create cluster --name "$KIND_CLUSTER"
           fi
 
-      - name: Build and load Docker images into KinD
+      - name: Build Docker images
         run: |
           SERVICES=(catalog ui cart orders checkout)
           for SERVICE in "${SERVICES[@]}"; do
-            (
-              echo "🔹 Building $SERVICE..."
-              docker build -t public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG ./src/$SERVICE
-              echo "🚀 Loading $SERVICE into KinD..."
-              kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG --name "$KIND_CLUSTER"
-            ) &
+            echo "🔹 Building $SERVICE..."
+            docker build -t public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG ./src/$SERVICE
           done
-          wait
-          echo "✅ All images built and loaded into KinD."
+
+      - name: Load images into KinD
+        run: |
+          SERVICES=(catalog ui cart orders checkout)
+          for SERVICE in "${SERVICES[@]}"; do
+            echo "🚀 Loading $SERVICE into KinD..."
+            kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:$IMAGE_TAG --name "$KIND_CLUSTER"
+          done
 
       - name: Log in to AWS ECR
         env:
@@ -83,6 +85,5 @@ jobs:
             echo "Docker not available, skipping integration tests..."
             ./mvnw clean package -DskipTests
 
-      - name: Cleanup old Docker images
-        run: |
-          docker system prune --all --force
+      - name: Cleanup Docker system
+        run: docker system prune --all --force
