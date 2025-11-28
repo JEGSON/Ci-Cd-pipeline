@@ -1,4 +1,4 @@
-name: Kubernetes E2E Tests
+name: E2E Test
 
 on:
   push:
@@ -12,56 +12,86 @@ on:
 permissions: {}
 
 jobs:
-  kubernetes-e2e:
+  docker:
+    name: Docker E2E Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Setup Env"
+        uses: ./.github/actions/setup-env
+      - name: Compose up
+        shell: devenv shell bash -- -e {0}
+        run: |
+          yarn nx compose:up ui
+          sleep 60
+      - name: Test
+        shell: devenv shell bash -- -e {0}
+        run: |
+          CYPRESS_BASE_URL='http://localhost:8888' yarn nx execute e2e
+      - name: Compose down
+        shell: devenv shell bash -- -e {0}
+        run: |
+          yarn nx compose:down ui
+
+  docker-multi:
+    name: Docker E2E Tests (Multi)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: "Setup Env"
+        uses: ./.github/actions/setup-env
+      - name: Compose up
+        shell: devenv shell bash -- -e {0}
+        run: |
+          DB_PASSWORD='test123' yarn nx compose:up
+          sleep 60
+      - name: Test
+        shell: devenv shell bash -- -e {0}
+        run: |
+          CYPRESS_BASE_URL='http://localhost:8888' yarn nx execute e2e
+      - name: Load Generator
+        shell: devenv shell bash -- -e {0}
+        run: |
+          cd src/load-generator
+          bash scripts/run-test.sh
+      - name: Compose down
+        shell: devenv shell bash -- -e {0}
+        run: |
+          DB_PASSWORD='test123' yarn nx compose:down
+
+  kubernetes:
     name: Kubernetes E2E Tests
     runs-on: ubuntu-latest
-    services:
-      docker:
-        image: docker:20.10.24-dind
-        options: --privileged
-
-    env:
-      IMAGE_TAG: e2e
-      KIND_CLUSTER: kind
-
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Setup environment
+      - uses: actions/checkout@v4
+      - name: "Setup Env"
         uses: ./.github/actions/setup-env
 
-      - name: Set up KinD
-        uses: helm/kind-action@v1.12.0
-        with:
-          cluster_name: ${{ env.KIND_CLUSTER }}
-          version: v0.17.0
-
-      - name: Build Docker images in parallel
+      - name: Build Docker images
         run: |
           SERVICES=(catalog ui cart orders checkout)
           for SERVICE in "${SERVICES[@]}"; do
-            (
-              echo "🔹 Building $SERVICE..."
-              yarn nx run $SERVICE:container \
-                --tags public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:${IMAGE_TAG}
-            ) &
+            echo "🔹 Building $SERVICE..."
+            yarn nx run $SERVICE:container --tags public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:e2e
           done
-          wait
-          echo "✅ All images built successfully."
+
+      - name: Setup KinD cluster
+        uses: helm/kind-action@v1.12.0
+        with:
+          cluster_name: kind
+          version: v0.17.0
 
       - name: Load Docker images into KinD
         run: |
           SERVICES=(catalog ui cart orders checkout)
           for SERVICE in "${SERVICES[@]}"; do
-            echo "🚀 Loading $SERVICE into KinD..."
-            kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:${IMAGE_TAG} --name $KIND_CLUSTER
+            kind load docker-image public.ecr.aws/aws-containers/retail-store-sample-$SERVICE:e2e --name kind
           done
 
       - name: Deploy with Helmfile
         shell: bash
         env:
-          IMAGE_TAG: ${{ env.IMAGE_TAG }}
+          IMAGE_TAG: e2e
         run: |
           NODE_PORT=30000 helmfile apply -f src/app/helmfile.yaml --wait --skip-diff-on-install
           kubectl wait --for=condition=Ready pod -l app.kubernetes.io/owner=retail-store-sample --timeout=180s || exit_code=$?
