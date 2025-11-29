@@ -7,13 +7,13 @@ ACCOUNT_ID="318112817098"
 CLUSTER_NAME="retail-store-dev-cluster"
 IMAGE_TAG="e2e"
 
-# Public subnets for FARGATE tasks
-SUBNETS="subnet-005406d96be71c9ae,subnet-0d9cc73917b3d7e16,subnet-01c86a4bde8732fae"
+# Public subnets for FARGATE tasks (same VPC as cluster)
+SUBNETS="subnet-005406d96be71c9ae,subnet-0d9cc73917b3d7e16"
 
 # ECS tasks security group
 SECURITY_GROUPS="sg-05886b71a82809363"
 
-# ECS execution role (must exist)
+# ECS execution role
 EXECUTION_ROLE_ARN="arn:aws:iam::$ACCOUNT_ID:role/ecsTaskExecutionRole"
 
 # Services to deploy
@@ -42,7 +42,7 @@ for SERVICE in "${SERVICES[@]}"; do
 
   echo "✅ Task definition registered for $SERVICE"
 
-  # Check if service exists
+  # Check if ECS service exists
   SERVICE_EXISTS=$(aws ecs describe-services \
     --cluster "$CLUSTER_NAME" \
     --services "$SERVICE" \
@@ -73,4 +73,4 @@ for SERVICE in "${SERVICES[@]}"; do
 
 done
 
-echo "🎉 All services deployed successfully!"
+echo "🎉 All ECS services deployed successfully!"
