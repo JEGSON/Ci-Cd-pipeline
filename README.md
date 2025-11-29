@@ -178,3 +178,4 @@ AND DISCLAIMERS APPLY EXCEPT TO THE EXTENT PROHIBITED BY APPLICABLE LAW.
 
 MariaDB Community License - [LICENSE](https://mariadb.com/kb/en/mariadb-licenses/)
 MySQL Community Edition - [LICENSE](https://github.com/mysql/mysql-server/blob/8.0/LICENSE)
+# CI/CD Pipeline - UI Service
