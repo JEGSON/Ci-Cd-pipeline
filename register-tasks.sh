@@ -6,7 +6,7 @@ ACCOUNT_ID="318112817098"
 EXECUTION_ROLE_ARN="arn:aws:iam::$ACCOUNT_ID:role/ecsTaskExecutionRole"
 IMAGE_TAG="e2e"
 
-SERVICES=("ui" "cart" "orders" "checkout")
+SERVICES=("ui" "cart" "orders" "checkout" "catalog")
 
 for SERVICE in "${SERVICES[@]}"; do
   echo "Registering task definition for $SERVICE..."
