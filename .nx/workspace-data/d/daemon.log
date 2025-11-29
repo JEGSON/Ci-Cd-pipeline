@@ -1779,3 +1779,7 @@
 [NX v20.8.2 Daemon Server] - 2025-11-28T20:24:01.889Z - [SYNC]: project graph hash is the same, not collecting task sync generators
 [NX v20.8.2 Daemon Server] - 2025-11-28T20:24:01.889Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
 [NX v20.8.2 Daemon Server] - 2025-11-28T20:24:01.889Z - Time taken for 'total execution time for createProjectGraph()' 48.73950000014156ms
+[NX v20.8.2 Daemon Server] - 2025-11-28T23:25:26.402Z - Closed a connection. Number of open connections: 0
+[NX v20.8.2 Daemon Server] - 2025-11-28T23:25:26.417Z - [WATCHER]: Stopping the watcher for /Users/wealth/AWS_DEVOPS/retail-store-sample-app (sources)
+[NX v20.8.2 Daemon Server] - 2025-11-28T23:25:26.418Z - [WATCHER]: Stopping the watcher for /Users/wealth/AWS_DEVOPS/retail-store-sample-app (outputs)
+[NX v20.8.2 Daemon Server] - 2025-11-28T23:25:26.444Z - Server stopped because: "10800000ms of inactivity"
